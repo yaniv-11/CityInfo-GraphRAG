@@ -26,6 +26,21 @@ python evals/evaluate_generator.py
 The generator uses dense retrieval context and OpenRouter, then DeepEval measures answer relevancy,
 faithfulness, and answer correctness.
 
+## Workflow evaluation
+
+```powershell
+python evals/evaluate_workflow.py
+```
+
+The workflow runner retrieves context, generates an answer, and reports:
+
+- Answer relevancy
+- Faithfulness
+- Context recall
+- Hallucination
+- Context precision
+- End-to-end answer correctness
+
 The default judge is Gemini. Set a Google API key before running it:
 
 ```powershell
