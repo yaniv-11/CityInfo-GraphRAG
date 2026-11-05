@@ -6,10 +6,6 @@ CivicGraph Bengaluru is a document-grounded RAG system built from Bengaluru dist
 multi-modal ingestion, knowledge-graph triplets, Chroma vector retrieval, OpenRouter generation, DeepEval
 quality analysis, and adversarial safety testing.
 
-## Repository name
-
-Recommended repository and product name: **CivicGraph Bengaluru**
-
 Short description:
 
 > A reproducible, evaluated Graph-RAG system for grounded answers about Bengaluru city information.
