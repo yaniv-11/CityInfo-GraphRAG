@@ -1,0 +1,1284 @@
+{
+  "configuration": {
+    "top_k": 5,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "judge": "lexical",
+    "judge_model": "gemini-2.0-flash",
+    "collection": "city_info_embeddings"
+  },
+  "aggregate": {
+    "contextual_precision": 0.7778,
+    "contextual_recall": 0.8667,
+    "contextual_relevancy": 0.6778,
+    "retrieval_precision_at_k": 0.6867,
+    "retrieval_recall_at_k": 0.9333,
+    "hit_rate": 0.9333,
+    "reciprocal_rank": 0.8467
+  },
+  "cases": [
+    {
+      "id": "dense-001",
+      "question": "Where is Bengaluru Urban located geographically, and what is its status in Karnataka?",
+      "ideal_answer": "Bengaluru Urban is located on the Deccan Plateau in south-eastern Karnataka, and Bengaluru is the capital city of Karnataka.",
+      "category": "direct_factual",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_3",
+        "page_4",
+        "page_21",
+        "page_12",
+        "page_13"
+      ],
+      "dense_distances": [
+        0.5500673055648804,
+        0.7970775365829468,
+        0.804547131061554,
+        0.850141167640686,
+        0.8677401542663574
+      ],
+      "retrieved_context": [
+        "District Overview\n\nBengaluru Urban\n\n  \n\nBengaluru\ni=l\n\n¢\nMera)\n74 men olacal\n\nBengaluru\nSouth\n\nLEGEND\n\nNational Roads\nRivers\n------- Railway\n\n* Bengaluru is the Capital city of Karnataka\n* Located on Deccan Plateau in the South Eastern part of Karnataka\n* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal\n\n37° C (Max) a\n\n6° C (Min) Bengaluru City\n\n79 (Max) 96, 21, 551\n\n45 (Min) (As per Census 2011)\n831mm 4,378 per sq. km.\n\nArkavati, Kanva and Dakshina\n\nPinakini 916 female per 1000 male\n\n2,208 sq. km 87.67 %\n\n  \n\nSource: Karnataka at Glance, 2013-14\n\nIK 2016 | BENGALURU URBAN Hi",
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "Connectivity\n\n   \n \n\nNH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad -\nBengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district\n\n* Total length of NHin the district’s 147km\n+ With 18 railway stations, total railway route of 148.32 km passes through the district\n+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states\n\n« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000\naircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009). It has a capacity of\nhandling 3000 passengers per hour\n\n« The BIAL Phase ll expansion is already under progress\n« Bengaluru In Land container Depot\n\n« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru. Total -137 km\n\n     \n     \n \n\n \n\nby 2017\nNearest Seaports Mumbai\nMangaluru 352 km.\nChennai 347 km. Hyderabad\nKarwar 522 km. “\nGoa 560 km.\n\nPort\nAirport\n352 Km\n\nFI Port BS Airport\n\nIK 2016 | BENGALURU URBAN B",
+        "Infrastructure Readiness\n\nKempegowda International Airport, Bengaluru is a PPP with\nGol, GoK and Private Sector investment\n\n+ Aggressive traffic growth - over 15 million passengers per annum\n* 3rd largest airport in India\n\n \n\n« Awarded “Best Regional Airport In Central Asia”\n\nCity Gas Distribution Project\n\n1583 inch-km plan over 5 years to cover\nBengaluru Urban and Rural districts at INR\n749 Crore (USD 125 mn). (as per DPR)\n\n \n\n \n\nBengaluru International Convention Centre\n\n* 35 acres of land has been earmarked in the vicinity of Kempegowda International Airport\n* 6000 seater Convention Centre within Business Park\n\n* O&M of Convention Centre and Allied infra on PPP\n\n* KSIIDC appointed as nodal agency\n\n* Concept and architectural design in progress\n\n* Concept plan, Garden city theme, and Greenhouse concept has been finalised\n\nIK 2016 | BENGALURU URBAN 13 |"
+      ],
+      "ideal_claims": [
+        "Bengaluru Urban is located on the Deccan Plateau in south-eastern Karnataka, and Bengaluru is the capital city of Karnataka."
+      ],
+      "retrieved_claims": [
+        "74 men olacal",
+        "* Bengaluru is the Capital city of Karnataka",
+        "* Located on Deccan Plateau in the South Eastern part of Karnataka",
+        "* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal",
+        "37° C (Max) a",
+        "6° C (Min) Bengaluru City",
+        "79 (Max) 96, 21, 551",
+        "45 (Min) (As per Census 2011)",
+        "831mm 4,378 per sq.",
+        "Arkavati, Kanva and Dakshina",
+        "Pinakini 916 female per 1000 male",
+        "2,208 sq."
+      ],
+      "ideal_claim_support": [
+        true
+      ],
+      "retrieved_claim_support": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.1667,
+      "contextual_recall": 1.0,
+      "contextual_relevancy": 0.1667,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-002",
+      "question": "What is the annual rainfall, population density, and sex ratio reported for Bengaluru Urban?",
+      "ideal_answer": "The reported annual rainfall is 831 mm, the population density is 4,378 people per square kilometre, and the sex ratio is 916 females per 1,000 males.",
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_9",
+        "page_4",
+        "page_21",
+        "page_2",
+        "page_3"
+      ],
+      "dense_distances": [
+        0.9182093143463135,
+        0.9534847736358643,
+        1.0105648040771484,
+        1.0299675464630127,
+        1.0785378217697144
+      ],
+      "retrieved_context": [
+        "Power and Water\n\nPower\n\n+ Transmission and Distribution in the district is\nbeing done by Bengaluru Electricity Supply\nCompany Limited (BESCOM)\n\n+ In wind power segment, projects have been\nproposed at Hanumanamatti and Kappatagudda\n\n+ Smart-grid is proposed to be implemented in the\nBengaluru Urban district by BESCOM\n\n+ Annual Average Consumption of 14225 MU\n+ 28 % Industrial, 33 % Domestic consumption\n\nWater\n\n+ Water supply for the district is managed by\nBangalore Water Supply and Sewerage Board\n(BWSSB)\n\n+ Water is sourced from Arakavathi river and\nCauvery for drinking purposes\n\n+ Bengaluru Urban has 461 water tanks of various\ncapacities serving irrigation needs\n\n+ 82 % of cultivable area is rain fed\n\n+ Total Supply Capacity - 1480 MLD\n\n+ 52 reservoirs and 118 ground level reservoirs\n+ Average Consumption\n\n+ Industrial - 522.37 MLD\n\n+ Domestic - 20.97 MLD\n\n=x\nAh\nJp\n\nJ\n\n \n\nSource: DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Bi",
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "District Overview\n\nBengaluru Urban\n\n  \n\nBengaluru\ni=l\n\n¢\nMera)\n74 men olacal\n\nBengaluru\nSouth\n\nLEGEND\n\nNational Roads\nRivers\n------- Railway\n\n* Bengaluru is the Capital city of Karnataka\n* Located on Deccan Plateau in the South Eastern part of Karnataka\n* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal\n\n37° C (Max) a\n\n6° C (Min) Bengaluru City\n\n79 (Max) 96, 21, 551\n\n45 (Min) (As per Census 2011)\n831mm 4,378 per sq. km.\n\nArkavati, Kanva and Dakshina\n\nPinakini 916 female per 1000 male\n\n2,208 sq. km 87.67 %\n\n  \n\nSource: Karnataka at Glance, 2013-14\n\nIK 2016 | BENGALURU URBAN Hi"
+      ],
+      "ideal_claims": [
+        "The reported annual rainfall is 831 mm, the population density is 4,378 people per square kilometre, and the sex ratio is 916 females per 1,000 males."
+      ],
+      "retrieved_claims": [
+        "Power and Water",
+        "+ Transmission and Distribution in the district is",
+        "being done by Bengaluru Electricity Supply",
+        "Company Limited (BESCOM)",
+        "+ In wind power segment, projects have been",
+        "proposed at Hanumanamatti and Kappatagudda",
+        "+ Smart-grid is proposed to be implemented in the",
+        "Bengaluru Urban district by BESCOM",
+        "+ Annual Average Consumption of 14225 MU",
+        "+ 28 % Industrial, 33 % Domestic consumption",
+        "+ Water supply for the district is managed by",
+        "Bangalore Water Supply and Sewerage Board"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.0,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 0.2
+    },
+    {
+      "id": "dense-003",
+      "question": "What were Bengaluru Urban's district Gross Domestic Product and contribution to Karnataka's GDDP in 2012-13?",
+      "ideal_answer": "In 2012-13, the district was the highest contributor to the state economy with a 33.3 percent contribution, and district GDDP was INR 99,325 crore.",
+      "category": "table_or_document_fact",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_4",
+        "page_2",
+        "page_3",
+        "page_24",
+        "page_21"
+      ],
+      "dense_distances": [
+        0.37767985463142395,
+        0.8046959638595581,
+        0.8696328997612,
+        0.8863984942436218,
+        0.9513336420059204
+      ],
+      "retrieved_context": [
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "District Overview\n\nBengaluru Urban\n\n  \n\nBengaluru\ni=l\n\n¢\nMera)\n74 men olacal\n\nBengaluru\nSouth\n\nLEGEND\n\nNational Roads\nRivers\n------- Railway\n\n* Bengaluru is the Capital city of Karnataka\n* Located on Deccan Plateau in the South Eastern part of Karnataka\n* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal\n\n37° C (Max) a\n\n6° C (Min) Bengaluru City\n\n79 (Max) 96, 21, 551\n\n45 (Min) (As per Census 2011)\n831mm 4,378 per sq. km.\n\nArkavati, Kanva and Dakshina\n\nPinakini 916 female per 1000 male\n\n2,208 sq. km 87.67 %\n\n  \n\nSource: Karnataka at Glance, 2013-14\n\nIK 2016 | BENGALURU URBAN Hi",
+        "Commissioner for Industrial Development & Director\nof Industries and Commerce\n\nGovernment of Karnataka\n\nNo. 49, South Block, Khanija Bhavan,\n\nRace Course Road, Bengaluru - 560 001, India\n\nPh.: +91 80 2238 6796\n\nEmail: commissioner@karnatakaindustry.gov.in\n\nvisit us at: www.karnatakaindustry.gov.in\n\nJoint Director\n\nDistrict Industries Centre (DIC)\n\nRajajinagar Industrial Estate, West of Chord Road,\nBengaluru - 560 044.\n\nPh: (+91- 080) 23501478, 23501481\n\nEmail: jd-bang-u@karnatakaindustry.gov.in\n\nManaging Director\n\nKarnataka Udyog Mitra\n\n3rd Floor, Khanija Bhavan (East Wing),\n\nNo. 49, Race Course Road, Bengaluru - 560 O01, India\nPh.: +91 80 2228 2392, 2228 5659, 2238 1232, 2228 6632\nFax: +91 80 2226 6063\n\nEmail: md@kumbangalore.com\n\nVisit us at: www.investkarnataka.gov.in\n\npwe",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization"
+      ],
+      "ideal_claims": [
+        "In 2012-13, the district was the highest contributor to the state economy with a 33.3 percent contribution, and district GDDP was INR 99,325 crore."
+      ],
+      "retrieved_claims": [
+        "0 Highest contributor to the State economy with 33.3% contribution to",
+        "GDDP (INR 99,325 Crore) (2012-2013)",
+        "6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13",
+        "6 Country’s fourth largest fast moving consumer goods (FMCG) market",
+        "Bengaluru Urban District’s Contribution to GSDP of Karnat:",
+        "Description INR Contribution (%)",
+        "Total District GDP 99,325 33.3",
+        "Agriculture and Allied 967 2.3",
+        "Husbandry, Forestry, Fishing)",
+        "Industry 30,028 36",
+        "Services 68,330 39.5",
+        "(Real estate, Hotels and"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.3333,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.3333,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-004",
+      "question": "How many small-scale, medium-scale, and large-scale industries are listed for Bengaluru Urban?",
+      "ideal_answer": "The profile lists 74,282 small-scale industries, 211 medium-scale industries, and 315 large-scale industries.",
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_6",
+        "page_2",
+        "page_21",
+        "page_4",
+        "page_16"
+      ],
+      "dense_distances": [
+        0.636992335319519,
+        0.7520086765289307,
+        0.7586488723754883,
+        0.822665810585022,
+        0.8353222608566284
+      ],
+      "retrieved_context": [
+        "Industry Profile\n\n- 315 Large Scale Industries with aggregated investment of INR 14793 Crore\n\n« 211Medium Scale Industries with aggregated investment of INR 1342 Crore\n\n \n\n+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore\n\n* World Economic Forum identified Bengaluru as the Innovation Cluster\n+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’\n+ Bengaluru is also known as Silicon Valley and Technology Base in Asia\n\n+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters\nlike Whitefield, Electronics City, Peenya etc.\n\n+ Peenya is the largest Industrial cluster in Asia\n\n- IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the\nhighest IT-related exports in the country\n\n- Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%\nof the total 340 such units in the country. Home to the biggest bio cluster in the Electronic City\n\n* Total 87 Fortune 500 MNCs, 2084 IT Companies and 195 BT companies are there in Bengaluru\n\n« Wellness Tourism: Bengaluru city facilitates over 6,000 patients from across the world with distinction\nof having largest number of systems of medicine approved by the WHO in asingle city\n\n+ Bengaluru ranks the highest in India in the implementation and value of PPP projects\n\n*« Wheel & Axel Industry, with highest production unit in Asia\n\nArtisan Clusters:\n\n+ Agarbatti, Rugs & Duries, Wood Carving, Shopping Bag/ Fancy Items, Toys and Decoration pieces, Brass\nand Copper Art Ware, Dolls from pulp, Jewellery,Metalware Grass, Leaf, Reed & Fibre, Earthier\nware/pottery, Embroidery by hand, Printing of cloth by hand, Toys and Decoration pieces, Wood\nFurniture & Fixtures, Textile Handlooms\n\nMSME Clusters:\n\nMachine Tools, Power Loom , Electronic Goods , Readymade Garments , Light engineering, Leather\nProducts\n\nNatural Resources:\nFelspar\n\nSource: DIC - Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Go",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO",
+        "Potential Industries\n\nIT & BT Capital:\n\n   \n\nCountry’s leading IT exporter\n\n87 SEI CMM Level-5 IT companies in the world and there are 63 in India; out of which more than 50% are in\nBengaluru\n\nAth Largest technology cluster in the world and largest in Asia\nOut of 30 top BT Schools in India, 20 are in Bengaluru\nHome to the biggest bio cluster in Electronic City\n\nBengaluru Biotech Park- Spread over 100 acres with World-Class Infrastructure, State-of-the art Biotech\nIncubators, Common Facilities Centre and Digital DNA Park\n\n2180 companies in Software Technology,196 BT, 2156 IT, etc.\n\nEngineering:\n\nBengaluru - the main expo hubs of the country and hosts IMTEX, the largest machine tool trade fair in South Asia\nHome to industrial Icons like - Toyota, Bosch, L&T, Kirloskar, Escorts Ltd (Automotive Division), Volvo.\n\nDelphi Automotive Systems Pvt. Ltd. has expanded its technical centre in Bengaluru with an investment of US\n$25 million\n\nAerospace:\n\nAerospace SEZ in 250 acres of land near Bengaluru International Airport\n\nIndia’s first private aircraft factory Hindustan Aircraft Ltd. began its operations in Bengaluru. Also, 4 out of 9\nR&D centres of HAL are in Bengaluru\n\nAirbus Industries has located its Airbus Engineering Centre at Bengaluru\n\nInternationally renowned institutions like HAL, DRDO, ISRO, ADA, NAL, Antrix are based in Bengaluru\nBengaluru is the headquarters of ISRO & DRDO, also DRDO has 5 aeronautic centers in Bengaluru\nPresence of renowned industrial icons - AirWorks India Engineering and QUEST Global\n\nKnowledge Based Industries:\n\nMicrosoft Research India is planning to open its 2nd R&D centre in Bengaluru\n\nThe Indian Institute of Human Settlements (IIHS), the country’s first university exclusively focused on\nurban affairs to be based at Bengaluru with a proposed investment of US $ 52.08 mn\n\nPhilips Innovation Campus in Bengaluru involved extensively in designing innovative engineering,\nhealthcare and consumer lifestyle solutions\n\nIBM, present in India since 1992, has one of its 10 global innovation centers in Bengaluru\nGE Healthcare, Bengaluru is GE’s innovation centre providing innovative solutions for healthcare industry\n\nMedical Hub due to the presence of World’s Largest ‘healing center’ and ‘telemedicine center\n\n   \n\nIK 2016 | BENGALURU URBAN"
+      ],
+      "ideal_claims": [
+        "The profile lists 74,282 small-scale industries, 211 medium-scale industries, and 315 large-scale industries."
+      ],
+      "retrieved_claims": [
+        "315 Large Scale Industries with aggregated investment of INR 14793 Crore",
+        "« 211Medium Scale Industries with aggregated investment of INR 1342 Crore",
+        "+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore",
+        "* World Economic Forum identified Bengaluru as the Innovation Cluster",
+        "+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’",
+        "+ Bengaluru is also known as Silicon Valley and Technology Base in Asia",
+        "+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters",
+        "like Whitefield, Electronics City, Peenya etc.",
+        "+ Peenya is the largest Industrial cluster in Asia",
+        "IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the",
+        "highest IT-related exports in the country",
+        "Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.0,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-005",
+      "question": "Which three parks or protected visitor areas are described in the tourism section, and what is notable about each one?",
+      "ideal_answer": "The tourism section describes Lalbagh Botanical Garden as a 240-acre garden commissioned by Hyder Ali with over 1,000 species, Bannerghatta National Park as a zoological reserve with white tigers and lions and India's first butterfly park, and Bangalore Palace as a Windsor Castle replica.",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "page_2",
+        "page_10",
+        "page_21",
+        "page_22",
+        "page_23"
+      ],
+      "dense_distances": [
+        1.1556153297424316,
+        1.1810734272003174,
+        1.2172223329544067,
+        1.421662449836731,
+        1.4392664432525635
+      ],
+      "retrieved_context": [
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Tourism\n\n   \n\nBull Temple: Magnificent pilgrimage to Nandi (the sacred bull as per Hindu mythology) which is 15 feet tall\nand over 20 feet long\n\nBannerghatta National Park: Rich natural zoological reserve with white tigers & lions. Also hosts first\nbutterfly park in India\n\nBangalore Palace: A minor replica of the Windsor Castle in England\n\nLalbagh Botanical Garden: Well known botanical garden spread over 240 acres commissioned by the Ruler\nof Mysore, Hyder Aliand home to over 1,000 species of flora\n\nVisvesvaraya Industrial and Technological Museum: Famous for its interactive exhibits\n\nTipu Sultan’s Summer Palace: Beautiful two storey ornate wooden structure with exquisitely carved pillars,\narches and balconies; built in 1791 and was Tipu Sultan’s summer retreat\n\nCubbon Park: is a landmark ‘lung’ area of Bengaluru city, located within the heart of city in the Central\nAdministrative Area. It has a rich recorded history of abundant flora plantations coupled with numerous\nimpressive and aesthetically located buildings and statues of famous personages\n\n \n\nIK 2016 | BENGALURU URBAN 10 |",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nDevelopment of International Aerospace Museum at\nJakkur in Bengaluru\n\nN\nfoe}\n\ni]\n©\n\nBengaluru International Convention Centre\n\nsen)\nfe}\n\nDevanahalli Business Park, Bengaluru\n\nNT\n\nDevelopment of Parking Management System in Bengaluru\n\nConstruction of Eight Lane Peripheral Ring Road (PRR) To\nBengaluru City\n\nen)\nN\n\nRedevelopment of Existing Market at Austin Town\n\nRedevelopment of BDA Shopping Complex at Domlur\n\nRedevelopment of BDA Complex at Indira Nagar\n\nRedevelopment of Existing Market at RT Nagar\n\nnT\n\naN) aN) wW in)\nN n uo 4 ce =\n\nRedevelopment of Mavalli Market, RV. Road, Bengaluru\n\nrN)\nfoo)\n\nConstruction of Market Complex at Akkipete, Bengaluru\n\nConstruction of 2000 Bus Shelters\n\nwW\n©\n\naS\nfe)\n\nEnergy Efficient Street Lights\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nTourism\n\nTourism\n\nUrban\nInfrastructure\n\nTransportation\n\nTransportation\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nNA\n\n1,035\n\nNA\n\n55\n\n11,950\n\n123\n\n21\n\nBoo\n\n49\n\nNA\n\nNA\n\nNA\n\nNA\n\n173\n\nNA\n\n1,992\n\n20\n\n59\n\n0.5\n\nNA\n\nNA\n\nNA\n\nAgency\n\nKSIIDC\n\nKSIIDC\n\nKSIIDC\n\nDULT\n\nBDA\n\nBDA\n\nBDA\n\nBDA\n\nBDA\n\nBBMP\n\nBBMP\n\nBBMP.\n\nBBMP.\n\n  \n\nStatus\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nDPR under\npreparation\n\nBidding stage/\nDPR completed\n\nBidding stage/\nDPR completed\n\nDPR under\npreparation\n\nBidding stage/\nDPR completed\n\nBidding stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization",
+        "Investment Opportunities\n\nTeel Total Cost\n\n    \n\nj [Seosi6\nName of the Project Sector = (USD mn) Agency Status\nUrban Conceptuali\nWaste to Energy Plants InTeeeRceurey NA NA BBMP Aion\n70 Replacement of Bore wells with Energy Efficient Urban 45 8 BWSSB Conceptuali\nMotors Infrastructure zation\n7= Waste to Energy Projects Sion NA NA Bwssp DPR under\nInfrastructure preparation\nOpportunities in the Properties of North, South,\nWest And East Part of the Bengaluru Urb c tuali\n77 (1) Setting up of Destination Malls mF fi et NA NA BMRCL. ar all\n(2) Setting up of Speciality Malls US eT\n(3) Setting up of Value Retail Format\nOpportunities in Metro properties at Jalahalli\n(1) Budget Hotels with Conference Hall Urban Conceptualiz\n©) (2) Malls with theaters Infrastructure Ae Ae Ee ation\n(3) Hotels\nOpportunities in Metro properties at Peenya Urban Conceptualiz\n(1) Micro Market Infrastructure Ne IA ee ation\nOpportunities in Metro properties at Mysore Road .\n. Urban Conceptualiz\n(1) Setting up of Multiplex with retails and food Infrae tenet orey NA NA BMRCL. aan\ncourt\nOpportunities in Metro properties at Banashankari\n(1) Establishment of IT /ITES Companies Urban Conceptualiz\nats (2) Micro Markets Infrastructure NA NA SS ation\n(3) Parking Facilities\nProperties in S P Road\n(1) Commercial Activity Urban Conceptualiz\nae (2) IT Related Industry Infrastructure NA NA BMRCL ation\n(3) Hospital\n50 Construction of 204 Km Satellite Town Ring Road Transportation 30,000 5000 BMRDA DPR under\n(STRR) preparation\nConstruction of 185 Km _ Internal Ring Road (IRR) - P Conceptualiz\nBengaluru Transportation NA NA BMRDA mian\n52 Construction of 197 Km Intermediate Ring Roads Transportation NA NA BMRDA Conceptualiz\n(IRR) - Bengaluru ation\nx3 Construction of 164 Km Radial Ring Road (RR) - Transportation NA NA BMRDA Conceptualiz\nBengaluru ation\nIK 2016 | BENGALURU URBAN 23 |"
+      ],
+      "ideal_claims": [
+        "The tourism section describes Lalbagh Botanical Garden as a 240-acre garden commissioned by Hyder Ali with over 1,000 species, Bannerghatta National Park as a zoological reserve with white tigers and lions and India's first butterfly park, and Bangalore Palace as a Windsor Castle replica."
+      ],
+      "retrieved_claims": [
+        "S N e D S h ot BENGALURU URBAN",
+        "Power and Water",
+        "Bull Temple: Magnificent pilgrimage to Nandi (the sacred bull as per Hindu mythology) which is 15 feet tall",
+        "and over 20 feet long",
+        "Bannerghatta National Park: Rich natural zoological reserve with white tigers & lions.",
+        "Also hosts first",
+        "butterfly park in India",
+        "Bangalore Palace: A minor replica of the Windsor Castle in England",
+        "Lalbagh Botanical Garden: Well known botanical garden spread over 240 acres commissioned by the Ruler",
+        "of Mysore, Hyder Aliand home to over 1,000 species of flora",
+        "Visvesvaraya Industrial and Technological Museum: Famous for its interactive exhibits",
+        "Tipu Sultan’s Summer Palace: Beautiful two storey ornate wooden structure with exquisitely carved pillars,"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.4167,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.4167,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "dense-006",
+      "question": "How many primary health centres, community health centres, and government allopathic hospitals are listed?",
+      "ideal_answer": "The district profile lists 79 primary health centres, 5 community health centres, and 124 government allopathic hospitals.",
+      "category": "multi_fact",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_11",
+        "page_6",
+        "page_2",
+        "page_17",
+        "page_7"
+      ],
+      "dense_distances": [
+        1.057889699935913,
+        1.1920136213302612,
+        1.4185409545898438,
+        1.4718742370605469,
+        1.523581624031067
+      ],
+      "retrieved_context": [
+        "Social Infrastructure\n\nHealthcare Facilities\n\n \n\nPrimary Health Centres 79\nCommunity Health Centres 5\nGovernment Allopathic Hospitals 124\nAyurvedic Hospitals 6\nPrivate Hospitals 195\n\nEducation Institutions\n\n \n\nState Universities\n\nDeemed Universities 4\nPrivate Universities 8\nEngineering Colleges 84\nPolytechnic Colleges 67\nMedical 10\nDental 16\n\nDegree Colleges offering courses in\nCommerce / Management /Science / Arts /\nComputer Applications / Education and\nPhysical Education\n\n \n\n \n\nDistrict is renowned centre of learning, with numerous legendary professional institutions, high\nschools, colleges and universities providing education to more than 1.8 lakh students. (36% of State)\n\nPremium institutes in the country like IIM Bengaluru, National Law School, Indian Institute of Science,\nNIFT, IIIT, University for Agricultural Science, Bengaluru University are in Bengaluru\n\nLeading International Schools: Mallya Aditi International School, Ryan International School,\nBengaluru International School\n\nEngineering education hub: District’s first engineering College started in 1917\nSource: DIC-Bengaluru Urban, www.targetstudy.com\n\nIK 2016 | BENGALURU URBAN Hi",
+        "Industry Profile\n\n- 315 Large Scale Industries with aggregated investment of INR 14793 Crore\n\n« 211Medium Scale Industries with aggregated investment of INR 1342 Crore\n\n \n\n+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore\n\n* World Economic Forum identified Bengaluru as the Innovation Cluster\n+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’\n+ Bengaluru is also known as Silicon Valley and Technology Base in Asia\n\n+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters\nlike Whitefield, Electronics City, Peenya etc.\n\n+ Peenya is the largest Industrial cluster in Asia\n\n- IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the\nhighest IT-related exports in the country\n\n- Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%\nof the total 340 such units in the country. Home to the biggest bio cluster in the Electronic City\n\n* Total 87 Fortune 500 MNCs, 2084 IT Companies and 195 BT companies are there in Bengaluru\n\n« Wellness Tourism: Bengaluru city facilitates over 6,000 patients from across the world with distinction\nof having largest number of systems of medicine approved by the WHO in asingle city\n\n+ Bengaluru ranks the highest in India in the implementation and value of PPP projects\n\n*« Wheel & Axel Industry, with highest production unit in Asia\n\nArtisan Clusters:\n\n+ Agarbatti, Rugs & Duries, Wood Carving, Shopping Bag/ Fancy Items, Toys and Decoration pieces, Brass\nand Copper Art Ware, Dolls from pulp, Jewellery,Metalware Grass, Leaf, Reed & Fibre, Earthier\nware/pottery, Embroidery by hand, Printing of cloth by hand, Toys and Decoration pieces, Wood\nFurniture & Fixtures, Textile Handlooms\n\nMSME Clusters:\n\nMachine Tools, Power Loom , Electronic Goods , Readymade Garments , Light engineering, Leather\nProducts\n\nNatural Resources:\nFelspar\n\nSource: DIC - Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Go",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Potential Industries\n\nAgri & Food Processing:\n\n   \n\n+ Flower Auction Centre & International Flower Auction Board is in operation at Bengaluru for promotion of\nexports of flowers from the State\n\n+ Hub for floriculture industries and accounts for 70% of all rose exports from India\n\n+ HOPCOMS, a co-operative society for marketing of Horticulture produce, handles a quantity of approximately\n100 metric tonnes per day in Bengaluru\n\n+ District agriculture training centre located at R.K Shala, Anekal Taluk\n«+ Around 10% of the total MSME units in the district are engaged in Agri and Food Processing\n\nPotential Sectors:\n\n+ Information Technology, Biotechnology + Mechanical & Automobile\n+ Food processing and dairy + Education, R&D\n+ Public Sector Heavy Industries - HAL, + Electronics and\nNAL, BHEL, BEML, ITI, BEL, etc Telecommunication\n+ Textile + Cement\n\nPotential Areas for Investment:\n\nInformation Technology: Bio-Tech and Pharma:\n+ Cloud Computing Infrastructure + Genetic Research\n+ IT/ITES + Drug Design and Discovery Centers\n\n+ IT Hardware and component manufacturing\n+ Business Process Outsourcing (BPO)\n\n+ Training and Education Centers\n\n+ Knowledge Process Outsources (KPO)\n\n+ Peptide synthesis\n+ Cloning technologies\n\nFood Processing: Knowledge Based Industries: Engineering:\n\n+ Research & Training institutes + Research & Development Centers + Electrical & Insulation units\n- Advanced agriculture technology - Knowledge City + Industrial instruments.\n\n+ Improvement in seed varieties + Private Universities + Home Equipments\n\n  \n\nIK 2016 | BENGALURU URBAN",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN"
+      ],
+      "ideal_claims": [
+        "The district profile lists 79 primary health centres, 5 community health centres, and 124 government allopathic hospitals."
+      ],
+      "retrieved_claims": [
+        "Primary Health Centres 79",
+        "Community Health Centres 5",
+        "Government Allopathic Hospitals 124",
+        "Ayurvedic Hospitals 6",
+        "Private Hospitals 195",
+        "Deemed Universities 4",
+        "Private Universities 8",
+        "Engineering Colleges 84",
+        "Polytechnic Colleges 67",
+        "Degree Colleges offering courses in",
+        "Commerce / Management /Science / Arts /",
+        "Computer Applications / Education and"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.25,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.25,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-007",
+      "question": "Which national highways pass through Bengaluru Urban, and what places do they connect?",
+      "ideal_answer": "National Highways NH-4, NH-7, and NH-209 pass through the district. The listed routes connect Mumbai-Pune-Bengaluru-Chennai, Varanasi-Nagpur-Hyderabad-Bengaluru-Madurai, and Bengaluru-Dindigul.",
+      "category": "comparison",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "page_12",
+        "page_20",
+        "page_3",
+        "page_21",
+        "page_2"
+      ],
+      "dense_distances": [
+        0.7573699951171875,
+        0.9155879020690918,
+        0.9455956220626831,
+        1.0084969997406006,
+        1.0120183229446411
+      ],
+      "retrieved_context": [
+        "Connectivity\n\n   \n \n\nNH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad -\nBengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district\n\n* Total length of NHin the district’s 147km\n+ With 18 railway stations, total railway route of 148.32 km passes through the district\n+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states\n\n« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000\naircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009). It has a capacity of\nhandling 3000 passengers per hour\n\n« The BIAL Phase ll expansion is already under progress\n« Bengaluru In Land container Depot\n\n« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru. Total -137 km\n\n     \n     \n \n\n \n\nby 2017\nNearest Seaports Mumbai\nMangaluru 352 km.\nChennai 347 km. Hyderabad\nKarwar 522 km. “\nGoa 560 km.\n\nPort\nAirport\n352 Km\n\nFI Port BS Airport\n\nIK 2016 | BENGALURU URBAN B",
+        "Investment Opportunities\n\nName of the Project Sector Agency Sie 1a\n(Crore) | (USD mn)\n\n \n\nDPR under\npreparation\n\nLight Rail Transit System in Bengaluru City Transportation 10,875 1,813, BARL\n\nDevelopment of Construction Multi Level Car Parking Conceptualizati\n\nTransportation NA NA BBMP\n\n[MLCP] Lots In Bengaluru Limits. on\nDevelopment of Transport And Transit Management Center . Bidding stage/\nat Hebbal Transportation 250 42 BMTC DPR completed\nDevelopment of Traffic And Transit Management Center at . cae\nJayanagar 4th T Block Transportation 240 40 BMTC Bidding stage/\nDPR completed\nTraffic and Transit Management Centre at Yelahanka Transportation 375 63 BMTC Bidding stage/\nDPR completed\nDevelopment of Traffic And Transit Management Center at Transportation 155 26 BMTc Bidding stage/\nKathriguppe, Bengaluru DPR completed\noleh A Bidding stage/\nDevelopment of TTMC at Electronic City Transportation 83 14 BMTC  ppr completed\nDevelopment of TTMC at Chikkabettahalli (MS Palya), reaneportation NA NA BMTC Conceptualizati\n\nBengaluru\ng on\n\nDevelopment of Six lanes, 10.6 km North -South Corridor\nConnecting Central Silk Board To Hebbal. (I.E., Nh -7 Transportation NA NA\nTowards Hosur To Nh -7 Towards Bellary)\n\nKRDCL Conceptualizati\non\n\nDevelopment of Six lanes, 19.7 km East -West Corridor -1\n\nConnecting K.R.Puram To Gorguntepalya. (I.E., NH -4 Conceptualizati\n\n10 Towards Old Madras Road And NH - 4 Bengaluru - Pune Transportation NA NA KRDCL on\nRoad)\nTl Development of Six lanes, 27.7 km elevated corridor ranenortation NA NA KRDCL Conceptualizati\n\nconnecting Jnanabharathi to Varthur Kodi on\n\nDevelopment of four lanes, 9.2 km Connecting Corridor -1;\nConnecting North -South Corridor & East - West Corridor -2 Transportation NA NA KRDCL\nFrom Agra To Kalasipalya\n\nConceptualizati\non\n\niS)\n\nDevelopment of four lanes, 2.3 km Connecting Corridor -2;\nConnecting East -West Corridor -1 & East - West Corridor -2. Transportation NA NA KRDCL\nFrom Richmond Road To Ulsoor\n\nConceptualizati\non\n\naw\n\nDevelopment of for lane, 5.7 km Connecting Corridor -3;\nConnecting Corridor From Kalyan Nagar Junction at Outer\nRing Road to St. Johns Church Road and Wheelers Road\nJunction\n\nConceptualizati\non\n\nR\n\nTransportation NA NA KRDCL\n\nSe es Ez\n\nIK 2016 | BENGALURU URBAN ES",
+        "District Overview\n\nBengaluru Urban\n\n  \n\nBengaluru\ni=l\n\n¢\nMera)\n74 men olacal\n\nBengaluru\nSouth\n\nLEGEND\n\nNational Roads\nRivers\n------- Railway\n\n* Bengaluru is the Capital city of Karnataka\n* Located on Deccan Plateau in the South Eastern part of Karnataka\n* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal\n\n37° C (Max) a\n\n6° C (Min) Bengaluru City\n\n79 (Max) 96, 21, 551\n\n45 (Min) (As per Census 2011)\n831mm 4,378 per sq. km.\n\nArkavati, Kanva and Dakshina\n\nPinakini 916 female per 1000 male\n\n2,208 sq. km 87.67 %\n\n  \n\nSource: Karnataka at Glance, 2013-14\n\nIK 2016 | BENGALURU URBAN Hi",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure"
+      ],
+      "ideal_claims": [
+        "National Highways NH-4, NH-7, and NH-209 pass through the district.",
+        "The listed routes connect Mumbai-Pune-Bengaluru-Chennai, Varanasi-Nagpur-Hyderabad-Bengaluru-Madurai, and Bengaluru-Dindigul."
+      ],
+      "retrieved_claims": [
+        "NH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad",
+        "Bengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district",
+        "* Total length of NHin the district’s 147km",
+        "+ With 18 railway stations, total railway route of 148.32 km passes through the district",
+        "+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states",
+        "« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000",
+        "aircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009).",
+        "It has a capacity of",
+        "handling 3000 passengers per hour",
+        "« The BIAL Phase ll expansion is already under progress",
+        "« Bengaluru In Land container Depot",
+        "« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru."
+      ],
+      "ideal_claim_support": [
+        true,
+        true
+      ],
+      "retrieved_claim_support": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.1667,
+      "contextual_recall": 1.0,
+      "contextual_relevancy": 0.1667,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-008",
+      "question": "What is Kempegowda International Airport, how many passengers does it handle annually, and what is its national ranking?",
+      "ideal_answer": "Kempegowda International Airport is a public-private partnership airport with aggressive annual traffic growth of over 15 million passengers, and it is described as India's third-largest airport.",
+      "category": "direct_factual",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_13",
+        "page_12",
+        "page_1",
+        "page_2",
+        "page_7"
+      ],
+      "dense_distances": [
+        0.990441620349884,
+        1.2337069511413574,
+        1.4778313636779785,
+        1.4872022867202759,
+        1.523004174232483
+      ],
+      "retrieved_context": [
+        "Infrastructure Readiness\n\nKempegowda International Airport, Bengaluru is a PPP with\nGol, GoK and Private Sector investment\n\n+ Aggressive traffic growth - over 15 million passengers per annum\n* 3rd largest airport in India\n\n \n\n« Awarded “Best Regional Airport In Central Asia”\n\nCity Gas Distribution Project\n\n1583 inch-km plan over 5 years to cover\nBengaluru Urban and Rural districts at INR\n749 Crore (USD 125 mn). (as per DPR)\n\n \n\n \n\nBengaluru International Convention Centre\n\n* 35 acres of land has been earmarked in the vicinity of Kempegowda International Airport\n* 6000 seater Convention Centre within Business Park\n\n* O&M of Convention Centre and Allied infra on PPP\n\n* KSIIDC appointed as nodal agency\n\n* Concept and architectural design in progress\n\n* Concept plan, Garden city theme, and Greenhouse concept has been finalised\n\nIK 2016 | BENGALURU URBAN 13 |",
+        "Connectivity\n\n   \n \n\nNH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad -\nBengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district\n\n* Total length of NHin the district’s 147km\n+ With 18 railway stations, total railway route of 148.32 km passes through the district\n+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states\n\n« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000\naircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009). It has a capacity of\nhandling 3000 passengers per hour\n\n« The BIAL Phase ll expansion is already under progress\n« Bengaluru In Land container Depot\n\n« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru. Total -137 km\n\n     \n     \n \n\n \n\nby 2017\nNearest Seaports Mumbai\nMangaluru 352 km.\nChennai 347 km. Hyderabad\nKarwar 522 km. “\nGoa 560 km.\n\nPort\nAirport\n352 Km\n\nFI Port BS Airport\n\nIK 2016 | BENGALURU URBAN B",
+        "Government of Karnataka\n\nINVEST\nKARNATAM\n\nGLOBAL vuvesr oO. 16\nFebruary 3-5, 2016\nBangalore Palace, Bengaluru\n\n \n\ni<\n\nBENGALURU URBAN\n\nDistrict Profile",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN"
+      ],
+      "ideal_claims": [
+        "Kempegowda International Airport is a public-private partnership airport with aggressive annual traffic growth of over 15 million passengers, and it is described as India's third-largest airport."
+      ],
+      "retrieved_claims": [
+        "Kempegowda International Airport, Bengaluru is a PPP with",
+        "Gol, GoK and Private Sector investment",
+        "+ Aggressive traffic growth - over 15 million passengers per annum",
+        "* 3rd largest airport in India",
+        "« Awarded “Best Regional Airport In Central Asia”",
+        "City Gas Distribution Project",
+        "1583 inch-km plan over 5 years to cover",
+        "Bengaluru Urban and Rural districts at INR",
+        "749 Crore (USD 125 mn).",
+        "(as per DPR)",
+        "Bengaluru International Convention Centre",
+        "* 35 acres of land has been earmarked in the vicinity of Kempegowda International Airport"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.25,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.25,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-009",
+      "question": "How many large-scale industries and medium-scale industries are in the industry profile, and how much investment is associated with each type?",
+      "ideal_answer": "The profile lists 315 large-scale industries with INR 14,793 crore in aggregate investment and 211 medium-scale industries with INR 1,342 crore in aggregate investment.",
+      "category": "table_or_document_fact",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "page_6",
+        "page_7",
+        "page_17",
+        "page_19",
+        "page_2"
+      ],
+      "dense_distances": [
+        1.0786761045455933,
+        1.1531823873519897,
+        1.1901873350143433,
+        1.2080905437469482,
+        1.2141320705413818
+      ],
+      "retrieved_context": [
+        "Industry Profile\n\n- 315 Large Scale Industries with aggregated investment of INR 14793 Crore\n\n« 211Medium Scale Industries with aggregated investment of INR 1342 Crore\n\n \n\n+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore\n\n* World Economic Forum identified Bengaluru as the Innovation Cluster\n+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’\n+ Bengaluru is also known as Silicon Valley and Technology Base in Asia\n\n+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters\nlike Whitefield, Electronics City, Peenya etc.\n\n+ Peenya is the largest Industrial cluster in Asia\n\n- IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the\nhighest IT-related exports in the country\n\n- Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%\nof the total 340 such units in the country. Home to the biggest bio cluster in the Electronic City\n\n* Total 87 Fortune 500 MNCs, 2084 IT Companies and 195 BT companies are there in Bengaluru\n\n« Wellness Tourism: Bengaluru city facilitates over 6,000 patients from across the world with distinction\nof having largest number of systems of medicine approved by the WHO in asingle city\n\n+ Bengaluru ranks the highest in India in the implementation and value of PPP projects\n\n*« Wheel & Axel Industry, with highest production unit in Asia\n\nArtisan Clusters:\n\n+ Agarbatti, Rugs & Duries, Wood Carving, Shopping Bag/ Fancy Items, Toys and Decoration pieces, Brass\nand Copper Art Ware, Dolls from pulp, Jewellery,Metalware Grass, Leaf, Reed & Fibre, Earthier\nware/pottery, Embroidery by hand, Printing of cloth by hand, Toys and Decoration pieces, Wood\nFurniture & Fixtures, Textile Handlooms\n\nMSME Clusters:\n\nMachine Tools, Power Loom , Electronic Goods , Readymade Garments , Light engineering, Leather\nProducts\n\nNatural Resources:\nFelspar\n\nSource: DIC - Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Go",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN",
+        "Potential Industries\n\nAgri & Food Processing:\n\n   \n\n+ Flower Auction Centre & International Flower Auction Board is in operation at Bengaluru for promotion of\nexports of flowers from the State\n\n+ Hub for floriculture industries and accounts for 70% of all rose exports from India\n\n+ HOPCOMS, a co-operative society for marketing of Horticulture produce, handles a quantity of approximately\n100 metric tonnes per day in Bengaluru\n\n+ District agriculture training centre located at R.K Shala, Anekal Taluk\n«+ Around 10% of the total MSME units in the district are engaged in Agri and Food Processing\n\nPotential Sectors:\n\n+ Information Technology, Biotechnology + Mechanical & Automobile\n+ Food processing and dairy + Education, R&D\n+ Public Sector Heavy Industries - HAL, + Electronics and\nNAL, BHEL, BEML, ITI, BEL, etc Telecommunication\n+ Textile + Cement\n\nPotential Areas for Investment:\n\nInformation Technology: Bio-Tech and Pharma:\n+ Cloud Computing Infrastructure + Genetic Research\n+ IT/ITES + Drug Design and Discovery Centers\n\n+ IT Hardware and component manufacturing\n+ Business Process Outsourcing (BPO)\n\n+ Training and Education Centers\n\n+ Knowledge Process Outsources (KPO)\n\n+ Peptide synthesis\n+ Cloning technologies\n\nFood Processing: Knowledge Based Industries: Engineering:\n\n+ Research & Training institutes + Research & Development Centers + Electrical & Insulation units\n- Advanced agriculture technology - Knowledge City + Industrial instruments.\n\n+ Improvement in seed varieties + Private Universities + Home Equipments\n\n  \n\nIK 2016 | BENGALURU URBAN",
+        "Annexure\n\nOther Key Players\n\nLeading Manufacturing Companies such as:\n+ Larson & Tubro\n\n+ Kirloskar\n\n+ General Motors\n\n+ General Engineering\n\n+ Volvo\n\n* INTEL\n\n+ SAP Labs\n\n+ Huawei Technologies\n\n+ Toyota Kirloskar\n\nYaHOo!\nWIPRO\n\nApplying Thought\n\n \n\nCG) Enriching Lives\n\nGa)\n\nTOYOTA\n\nIK 2016 | BENGALURU URBAN\n\n \n\ncated\n\n \n\nEngineering Industries such as:\n* National Aerospace Laboratories\nBHEL\n\n+ Indian Telephone Industries\n\n+ BEML\nBEL\n+ HMT\n\n* Wheel & Axle plant\n\nve TEXAS\nINSTRUMENTS\n\nwy\n\nHUAWEI\n\n—\n—er, “\n\nHET SHRPCUGT FA\nBHARAT ELECTROMICS:",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure"
+      ],
+      "ideal_claims": [
+        "The profile lists 315 large-scale industries with INR 14,793 crore in aggregate investment and 211 medium-scale industries with INR 1,342 crore in aggregate investment."
+      ],
+      "retrieved_claims": [
+        "315 Large Scale Industries with aggregated investment of INR 14793 Crore",
+        "« 211Medium Scale Industries with aggregated investment of INR 1342 Crore",
+        "+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore",
+        "* World Economic Forum identified Bengaluru as the Innovation Cluster",
+        "+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’",
+        "+ Bengaluru is also known as Silicon Valley and Technology Base in Asia",
+        "+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters",
+        "like Whitefield, Electronics City, Peenya etc.",
+        "+ Peenya is the largest Industrial cluster in Asia",
+        "IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the",
+        "highest IT-related exports in the country",
+        "Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.25,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.25,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-010",
+      "question": "What four major crops are named in Bengaluru Urban's agricultural profile?",
+      "ideal_answer": "The four named major crops are maize, rice, pulses, and vegetables.",
+      "category": "direct_factual",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_5",
+        "page_2",
+        "page_21",
+        "page_6",
+        "page_4"
+      ],
+      "dense_distances": [
+        0.7113691568374634,
+        0.8990239500999451,
+        0.9261112213134766,
+        0.9956984519958496,
+        1.0060253143310547
+      ],
+      "retrieved_context": [
+        "Agricultural Profile\n\nThrust Areas\n* Expanding organic farming\n* Micro irrigation systems\n\n* Bio-fuel extraction plant and post\nharvest management facilities\n\n* Mechanization of farm activities\n\nMajor Crops\n\n+ Major crops grown - Paddy, Ragi, Maize, Horse\nGram and Oil Seeds.\n\n+ Anekal Taluk is called as ragi bowl of the State\n\n+ Horticultural crops - Banana, Grapes, Papaya,\nMango, Sapota, Pomegranate\n\n* Commercial plantation - Coconut, Rose\n\n+ The district has 649 milk co-operatives and\nproduces 119 mn litres of milk, 34.7 mn eggs,\n5880 tonnes of meat annually\n\nKey Enablers\n\n+ Bengaluru city provides unlimited access to\nmarket for fresh and processed horticultural\nproducts\n\n+ Presence of Floriculture auction center and\nInternational Airport provides enormous\nscope for floriculture industry. Bengaluru\nUrban is recognized as Class A destination for\nfloriculture projects\n\n+ Central and State Warehouses present in the\ndistrict supporting the agri market\n\n+ 30 Cold storages for vegetables, sea food, ice\ncream and for various other purposes\n\n+ Access to Bengaluru city market and other\ninternational organic markets offers great\nscope for organic farming in the district\n\n* Medium and bi-model rainfall pattern is\nsuitable for short/ long duration crops and for\nvaried cropping systems\n\n+ Excellent infrastructure for agriculture\nmarketing\n\n+ District agriculture training centre located at\nR.K Shala, Anekal Taluk\n\nSource: Karnataka at Glance, DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN\n\nLand Utilisation (%)\n\n \n\nForests\n\n   \n  \n \n\n1.49%\nRemaining\narea 43.66%\n\nUncultivated\nLand 40.76%\n\nNet sown area\n(NSA) 14.09%\nTotal Land Area - 2,17,410 ha\n\nCropping Pattern (in %)\n\nOther Oil Seeds\n22.21% 1.43%\n\n-————> Commercial\ny crops 0.05%\n\n    \n\nPulses\n9.94%\n\nCereals\n\n66.36%",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization",
+        "Industry Profile\n\n- 315 Large Scale Industries with aggregated investment of INR 14793 Crore\n\n« 211Medium Scale Industries with aggregated investment of INR 1342 Crore\n\n \n\n+ 74,282 small-scale industries with aggregated investment INR 41,213 Crore\n\n* World Economic Forum identified Bengaluru as the Innovation Cluster\n+ Business Week placed Bengaluru among the 'Global Hot Spots of the 21* Century’\n+ Bengaluru is also known as Silicon Valley and Technology Base in Asia\n\n+ Bengaluru is one of the pioneers in the concept of industrial clusters with established industrial clusters\nlike Whitefield, Electronics City, Peenya etc.\n\n+ Peenya is the largest Industrial cluster in Asia\n\n- IT firms in Bengaluru employ about 35% of India’s pool of 1 million IT professionals and account for the\nhighest IT-related exports in the country\n\n- Bengaluru is home to the biggest bio cluster in India with 137 Biotechnology companies, making it 40%\nof the total 340 such units in the country. Home to the biggest bio cluster in the Electronic City\n\n* Total 87 Fortune 500 MNCs, 2084 IT Companies and 195 BT companies are there in Bengaluru\n\n« Wellness Tourism: Bengaluru city facilitates over 6,000 patients from across the world with distinction\nof having largest number of systems of medicine approved by the WHO in asingle city\n\n+ Bengaluru ranks the highest in India in the implementation and value of PPP projects\n\n*« Wheel & Axel Industry, with highest production unit in Asia\n\nArtisan Clusters:\n\n+ Agarbatti, Rugs & Duries, Wood Carving, Shopping Bag/ Fancy Items, Toys and Decoration pieces, Brass\nand Copper Art Ware, Dolls from pulp, Jewellery,Metalware Grass, Leaf, Reed & Fibre, Earthier\nware/pottery, Embroidery by hand, Printing of cloth by hand, Toys and Decoration pieces, Wood\nFurniture & Fixtures, Textile Handlooms\n\nMSME Clusters:\n\nMachine Tools, Power Loom , Electronic Goods , Readymade Garments , Light engineering, Leather\nProducts\n\nNatural Resources:\nFelspar\n\nSource: DIC - Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Go",
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO"
+      ],
+      "ideal_claims": [
+        "The four named major crops are maize, rice, pulses, and vegetables."
+      ],
+      "retrieved_claims": [
+        "* Expanding organic farming",
+        "* Micro irrigation systems",
+        "* Bio-fuel extraction plant and post",
+        "harvest management facilities",
+        "* Mechanization of farm activities",
+        "+ Major crops grown - Paddy, Ragi, Maize, Horse",
+        "Gram and Oil Seeds.",
+        "+ Anekal Taluk is called as ragi bowl of the State",
+        "+ Horticultural crops - Banana, Grapes, Papaya,",
+        "Mango, Sapota, Pomegranate",
+        "* Commercial plantation - Coconut, Rose",
+        "+ The district has 649 milk co-operatives and"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.0,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-011",
+      "question": "What is the per capita annual income reported in the economic profile, and for which year?",
+      "ideal_answer": "The reported per capita annual income is INR 2,02,340 for the year 2012-13.",
+      "category": "direct_factual",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_4",
+        "page_2",
+        "page_7",
+        "page_9",
+        "page_15"
+      ],
+      "dense_distances": [
+        1.1853396892547607,
+        1.408556580543518,
+        1.56239652633667,
+        1.5901188850402832,
+        1.607116460800171
+      ],
+      "retrieved_context": [
+        "Economic Profile\n\n0 Highest contributor to the State economy with 33.3% contribution to\nGDDP (INR 99,325 Crore) (2012-2013)\n\n6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13\n\n  \n  \n\n6 Country’s fourth largest fast moving consumer goods (FMCG) market\n\n  \n \n\nBengaluru Urban District’s Contribution to GSDP of Karnat:\n\n(2012-13)\nDescription INR Contribution (%)\nCrore\nTotal District GDP 99,325 33.3\nAgriculture and Allied 967 2.3\n\n(Agriculture, Animal\nHusbandry, Forestry, Fishing)\n\nIndustry 30,028 36\n(Manufacturing,\nConstruction, Mining)\n\nServices 68,330 39.5\n(Real estate, Hotels and\nrestaurants, banking, and\nlegal services)\n\n \n\n \n\nBengaluru Urban GDP Trend (In INR Crore)\n\n   \n\n96,232 99,325\n\n84,072 84,336 86,831\n| . |\n\n2007-08 2008-09 2009-10 2010-11 2011-12 2012-13\n\n \n\nSource: State and District Domestic Product of Karnataka 14-15 m Primary MSecondary MTertiary © GDDP\n\nIK 2016 | BENGALURU URBAN gO",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN",
+        "Power and Water\n\nPower\n\n+ Transmission and Distribution in the district is\nbeing done by Bengaluru Electricity Supply\nCompany Limited (BESCOM)\n\n+ In wind power segment, projects have been\nproposed at Hanumanamatti and Kappatagudda\n\n+ Smart-grid is proposed to be implemented in the\nBengaluru Urban district by BESCOM\n\n+ Annual Average Consumption of 14225 MU\n+ 28 % Industrial, 33 % Domestic consumption\n\nWater\n\n+ Water supply for the district is managed by\nBangalore Water Supply and Sewerage Board\n(BWSSB)\n\n+ Water is sourced from Arakavathi river and\nCauvery for drinking purposes\n\n+ Bengaluru Urban has 461 water tanks of various\ncapacities serving irrigation needs\n\n+ 82 % of cultivable area is rain fed\n\n+ Total Supply Capacity - 1480 MLD\n\n+ 52 reservoirs and 118 ground level reservoirs\n+ Average Consumption\n\n+ Industrial - 522.37 MLD\n\n+ Domestic - 20.97 MLD\n\n=x\nAh\nJp\n\nJ\n\n \n\nSource: DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Bi",
+        "Infrastructure Readiness\n\n \n   \n\n0 : Operational Total Inv Exports Total\nNeeded Telefe) Taco SEZ units INRinCrore (2014-15) Employees\n\n     \n \n   \n \n\n1 | Bagmane SEZ peta IT &ITES 18 992.65 3524.68 18211\n2 | Biocon SEZ Desay Bos 12 1591.17 581.13 3953\nUrban technology\n3 Tochnouark Bengaluru | IT &ITES 5 720.61 | 2250.36 | 13913\n4 | Cessna SEZ eae IT &ITES 2 14775.41 | 3152.64 6980\n5 rormerly seeatin sez) Bengaluru | IT @ITES 18 228.94 | 4154.74 | 15486\n6 tid (clobal Ane tlooaty ef ee IT & ITES 15 222.33 | 3556.85 9911\n7 | HCL Technologies Ltd. pe fae IT & ITES 6 736.95 1824.52 7046\n8 aoe ‘arp hnology cee IT & ITES 10 196.31 4500.58 15972\n2 bucecs Paces arene IT &ITES 34 1299.33 7435.2 52059\nw|fecieeeseg | apg frames | ay | scene | vase | os\nRMZ Ecoworld Infrastructure\nUe Reece career ee iean | IT &ITES 26 1666.05 | 2882.29 7495\nProjects Pvt. Ltd.)\n12 | VIKAS TELECOM ef ae IT &ITES 36 1593.84 | 2215.48 8481\ni) crecuonte city) Pangan TP SITES 3 43114 3988.63 | 10094\n14 | Wipro United (Sarjapur) ce IT &ITES 4 480.58 4322.28 10920\nCee Aer etean | IT&ITES 1 444 24.12 651\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nIK 2016 | BENGALURU URBAN GG"
+      ],
+      "ideal_claims": [
+        "The reported per capita annual income is INR 2,02,340 for the year 2012-13."
+      ],
+      "retrieved_claims": [
+        "0 Highest contributor to the State economy with 33.3% contribution to",
+        "GDDP (INR 99,325 Crore) (2012-2013)",
+        "6 Per capita annual income in the district is INR 2,02,340 for the year 2012-13",
+        "6 Country’s fourth largest fast moving consumer goods (FMCG) market",
+        "Bengaluru Urban District’s Contribution to GSDP of Karnat:",
+        "Description INR Contribution (%)",
+        "Total District GDP 99,325 33.3",
+        "Agriculture and Allied 967 2.3",
+        "Husbandry, Forestry, Fishing)",
+        "Industry 30,028 36",
+        "Services 68,330 39.5",
+        "(Real estate, Hotels and"
+      ],
+      "ideal_claim_support": [
+        true
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0833,
+      "contextual_recall": 1.0,
+      "contextual_relevancy": 0.0833,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-012",
+      "question": "Which rivers are shown for Bengaluru Urban and into which river basin is Bengaluru classified in the district overview?",
+      "ideal_answer": "The rivers shown are Arkavati, Kanva, and Dakshina Pinakini. Bengaluru is classified in the Cauvery River basin.",
+      "category": "entity_relation",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "page_3",
+        "page_2",
+        "page_9",
+        "page_12",
+        "page_21"
+      ],
+      "dense_distances": [
+        0.6008428335189819,
+        0.7853096127510071,
+        0.7993465662002563,
+        0.9361234903335571,
+        1.0068070888519287
+      ],
+      "retrieved_context": [
+        "District Overview\n\nBengaluru Urban\n\n  \n\nBengaluru\ni=l\n\n¢\nMera)\n74 men olacal\n\nBengaluru\nSouth\n\nLEGEND\n\nNational Roads\nRivers\n------- Railway\n\n* Bengaluru is the Capital city of Karnataka\n* Located on Deccan Plateau in the South Eastern part of Karnataka\n* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal\n\n37° C (Max) a\n\n6° C (Min) Bengaluru City\n\n79 (Max) 96, 21, 551\n\n45 (Min) (As per Census 2011)\n831mm 4,378 per sq. km.\n\nArkavati, Kanva and Dakshina\n\nPinakini 916 female per 1000 male\n\n2,208 sq. km 87.67 %\n\n  \n\nSource: Karnataka at Glance, 2013-14\n\nIK 2016 | BENGALURU URBAN Hi",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Power and Water\n\nPower\n\n+ Transmission and Distribution in the district is\nbeing done by Bengaluru Electricity Supply\nCompany Limited (BESCOM)\n\n+ In wind power segment, projects have been\nproposed at Hanumanamatti and Kappatagudda\n\n+ Smart-grid is proposed to be implemented in the\nBengaluru Urban district by BESCOM\n\n+ Annual Average Consumption of 14225 MU\n+ 28 % Industrial, 33 % Domestic consumption\n\nWater\n\n+ Water supply for the district is managed by\nBangalore Water Supply and Sewerage Board\n(BWSSB)\n\n+ Water is sourced from Arakavathi river and\nCauvery for drinking purposes\n\n+ Bengaluru Urban has 461 water tanks of various\ncapacities serving irrigation needs\n\n+ 82 % of cultivable area is rain fed\n\n+ Total Supply Capacity - 1480 MLD\n\n+ 52 reservoirs and 118 ground level reservoirs\n+ Average Consumption\n\n+ Industrial - 522.37 MLD\n\n+ Domestic - 20.97 MLD\n\n=x\nAh\nJp\n\nJ\n\n \n\nSource: DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Bi",
+        "Connectivity\n\n   \n \n\nNH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad -\nBengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district\n\n* Total length of NHin the district’s 147km\n+ With 18 railway stations, total railway route of 148.32 km passes through the district\n+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states\n\n« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000\naircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009). It has a capacity of\nhandling 3000 passengers per hour\n\n« The BIAL Phase ll expansion is already under progress\n« Bengaluru In Land container Depot\n\n« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru. Total -137 km\n\n     \n     \n \n\n \n\nby 2017\nNearest Seaports Mumbai\nMangaluru 352 km.\nChennai 347 km. Hyderabad\nKarwar 522 km. “\nGoa 560 km.\n\nPort\nAirport\n352 Km\n\nFI Port BS Airport\n\nIK 2016 | BENGALURU URBAN B",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nConstruction of 221 public toilets in Bengaluru City\n\nConstruction of Skywalks in Bengaluru City\n\nRedevelopment of Existing Markets in Bengaluru City\n\nRedevelopment of Commercial Complex at Indiranagar,\nBengaluru\n\nRedevelopment of Commercial Complex at Vijayanagar,\nBengaluru\n\nDevelopment of Animation, Visual Effects, Gaming and\n\n29 comics (AVGC Lab)\n\nfo)\n\nDevelopment of Digital Media City\n\ni]\n\nDevelopment of LEGO Theme Park at Bengaluru.\n\ni)\n\nDevelopment of Disney Land Theme Park at Bengaluru\n\nDevelopment of Cruise Dinner Project at Halasuru Lake,\nBengaluru\n\nIN)\naN\n\ni]\nwo\n\nDevelopment of Snow Park in Bengaluru\n\nDevelopment of Arts & Crafts Village in Bengaluru\n\ni}\nron)\n\ni}\nNI\n\nDevelopment of Bengaluru Eye\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nIndustrial\nInfrastructure -IT\nParks\n\nIndustrial\nInfrastructure -IT\nParks\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nTourism\n\nNA\n\n335\n\n40\n\n26\n\n782\n\n62\n\n100\n\n40\n\n43\n\nNA\n\nNA\n\n56\n\n130\n\nNA\n\nAgency\n\nBBMP\n\nBBMP\n\nBBMP\n\nBDA\n\nBDA\n\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nKarnataka\nBiotechnol\nogy &\nInformation\nTechnolog\ny Services\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\nTourism\nDepartmen\nt\n\n   \n\nStatus\n\nConceptualization\n\nConceptualization\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization\nConceptualization\n\nConceptualization"
+      ],
+      "ideal_claims": [
+        "The rivers shown are Arkavati, Kanva, and Dakshina Pinakini.",
+        "Bengaluru is classified in the Cauvery River basin."
+      ],
+      "retrieved_claims": [
+        "74 men olacal",
+        "* Bengaluru is the Capital city of Karnataka",
+        "* Located on Deccan Plateau in the South Eastern part of Karnataka",
+        "* Spread across four Talukas namely Bengaluru North, Bengaluru East, Bengaluru South and Anekal",
+        "37° C (Max) a",
+        "6° C (Min) Bengaluru City",
+        "79 (Max) 96, 21, 551",
+        "45 (Min) (As per Census 2011)",
+        "831mm 4,378 per sq.",
+        "Arkavati, Kanva and Dakshina",
+        "Pinakini 916 female per 1000 male",
+        "2,208 sq."
+      ],
+      "ideal_claim_support": [
+        false,
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0833,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.0833,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-013",
+      "question": "Which utility company handles transmission and distribution in the district?",
+      "ideal_answer": "Transmission and distribution in Bengaluru Urban are handled by Bengaluru Electricity Supply Company Limited (BESCOM).",
+      "category": "direct_factual",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_9",
+        "page_20",
+        "page_7",
+        "page_2",
+        "page_24"
+      ],
+      "dense_distances": [
+        1.2286436557769775,
+        1.272803544998169,
+        1.3018596172332764,
+        1.314853549003601,
+        1.3788955211639404
+      ],
+      "retrieved_context": [
+        "Power and Water\n\nPower\n\n+ Transmission and Distribution in the district is\nbeing done by Bengaluru Electricity Supply\nCompany Limited (BESCOM)\n\n+ In wind power segment, projects have been\nproposed at Hanumanamatti and Kappatagudda\n\n+ Smart-grid is proposed to be implemented in the\nBengaluru Urban district by BESCOM\n\n+ Annual Average Consumption of 14225 MU\n+ 28 % Industrial, 33 % Domestic consumption\n\nWater\n\n+ Water supply for the district is managed by\nBangalore Water Supply and Sewerage Board\n(BWSSB)\n\n+ Water is sourced from Arakavathi river and\nCauvery for drinking purposes\n\n+ Bengaluru Urban has 461 water tanks of various\ncapacities serving irrigation needs\n\n+ 82 % of cultivable area is rain fed\n\n+ Total Supply Capacity - 1480 MLD\n\n+ 52 reservoirs and 118 ground level reservoirs\n+ Average Consumption\n\n+ Industrial - 522.37 MLD\n\n+ Domestic - 20.97 MLD\n\n=x\nAh\nJp\n\nJ\n\n \n\nSource: DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Bi",
+        "Investment Opportunities\n\nName of the Project Sector Agency Sie 1a\n(Crore) | (USD mn)\n\n \n\nDPR under\npreparation\n\nLight Rail Transit System in Bengaluru City Transportation 10,875 1,813, BARL\n\nDevelopment of Construction Multi Level Car Parking Conceptualizati\n\nTransportation NA NA BBMP\n\n[MLCP] Lots In Bengaluru Limits. on\nDevelopment of Transport And Transit Management Center . Bidding stage/\nat Hebbal Transportation 250 42 BMTC DPR completed\nDevelopment of Traffic And Transit Management Center at . cae\nJayanagar 4th T Block Transportation 240 40 BMTC Bidding stage/\nDPR completed\nTraffic and Transit Management Centre at Yelahanka Transportation 375 63 BMTC Bidding stage/\nDPR completed\nDevelopment of Traffic And Transit Management Center at Transportation 155 26 BMTc Bidding stage/\nKathriguppe, Bengaluru DPR completed\noleh A Bidding stage/\nDevelopment of TTMC at Electronic City Transportation 83 14 BMTC  ppr completed\nDevelopment of TTMC at Chikkabettahalli (MS Palya), reaneportation NA NA BMTC Conceptualizati\n\nBengaluru\ng on\n\nDevelopment of Six lanes, 10.6 km North -South Corridor\nConnecting Central Silk Board To Hebbal. (I.E., Nh -7 Transportation NA NA\nTowards Hosur To Nh -7 Towards Bellary)\n\nKRDCL Conceptualizati\non\n\nDevelopment of Six lanes, 19.7 km East -West Corridor -1\n\nConnecting K.R.Puram To Gorguntepalya. (I.E., NH -4 Conceptualizati\n\n10 Towards Old Madras Road And NH - 4 Bengaluru - Pune Transportation NA NA KRDCL on\nRoad)\nTl Development of Six lanes, 27.7 km elevated corridor ranenortation NA NA KRDCL Conceptualizati\n\nconnecting Jnanabharathi to Varthur Kodi on\n\nDevelopment of four lanes, 9.2 km Connecting Corridor -1;\nConnecting North -South Corridor & East - West Corridor -2 Transportation NA NA KRDCL\nFrom Agra To Kalasipalya\n\nConceptualizati\non\n\niS)\n\nDevelopment of four lanes, 2.3 km Connecting Corridor -2;\nConnecting East -West Corridor -1 & East - West Corridor -2. Transportation NA NA KRDCL\nFrom Richmond Road To Ulsoor\n\nConceptualizati\non\n\naw\n\nDevelopment of for lane, 5.7 km Connecting Corridor -3;\nConnecting Corridor From Kalyan Nagar Junction at Outer\nRing Road to St. Johns Church Road and Wheelers Road\nJunction\n\nConceptualizati\non\n\nR\n\nTransportation NA NA KRDCL\n\nSe es Ez\n\nIK 2016 | BENGALURU URBAN ES",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Commissioner for Industrial Development & Director\nof Industries and Commerce\n\nGovernment of Karnataka\n\nNo. 49, South Block, Khanija Bhavan,\n\nRace Course Road, Bengaluru - 560 001, India\n\nPh.: +91 80 2238 6796\n\nEmail: commissioner@karnatakaindustry.gov.in\n\nvisit us at: www.karnatakaindustry.gov.in\n\nJoint Director\n\nDistrict Industries Centre (DIC)\n\nRajajinagar Industrial Estate, West of Chord Road,\nBengaluru - 560 044.\n\nPh: (+91- 080) 23501478, 23501481\n\nEmail: jd-bang-u@karnatakaindustry.gov.in\n\nManaging Director\n\nKarnataka Udyog Mitra\n\n3rd Floor, Khanija Bhavan (East Wing),\n\nNo. 49, Race Course Road, Bengaluru - 560 O01, India\nPh.: +91 80 2228 2392, 2228 5659, 2238 1232, 2228 6632\nFax: +91 80 2226 6063\n\nEmail: md@kumbangalore.com\n\nVisit us at: www.investkarnataka.gov.in\n\npwe"
+      ],
+      "ideal_claims": [
+        "Transmission and distribution in Bengaluru Urban are handled by Bengaluru Electricity Supply Company Limited (BESCOM)."
+      ],
+      "retrieved_claims": [
+        "Power and Water",
+        "+ Transmission and Distribution in the district is",
+        "being done by Bengaluru Electricity Supply",
+        "Company Limited (BESCOM)",
+        "+ In wind power segment, projects have been",
+        "proposed at Hanumanamatti and Kappatagudda",
+        "+ Smart-grid is proposed to be implemented in the",
+        "Bengaluru Urban district by BESCOM",
+        "+ Annual Average Consumption of 14225 MU",
+        "+ 28 % Industrial, 33 % Domestic consumption",
+        "+ Water supply for the district is managed by",
+        "Bangalore Water Supply and Sewerage Board"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.3333,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.3333,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-014",
+      "question": "How much does the Light Rail Transit System project cost, and which agency is associated with it?",
+      "ideal_answer": "The Light Rail Transit System project in Bengaluru City is listed at INR 10,875 crore, and the associated agency is BMRCL.",
+      "category": "table_or_document_fact",
+      "difficulty": "medium",
+      "retrieved_chunk_ids": [
+        "page_20",
+        "page_13",
+        "page_22",
+        "page_12",
+        "page_2"
+      ],
+      "dense_distances": [
+        1.193505048751831,
+        1.388415813446045,
+        1.4552274942398071,
+        1.5018237829208374,
+        1.5030537843704224
+      ],
+      "retrieved_context": [
+        "Investment Opportunities\n\nName of the Project Sector Agency Sie 1a\n(Crore) | (USD mn)\n\n \n\nDPR under\npreparation\n\nLight Rail Transit System in Bengaluru City Transportation 10,875 1,813, BARL\n\nDevelopment of Construction Multi Level Car Parking Conceptualizati\n\nTransportation NA NA BBMP\n\n[MLCP] Lots In Bengaluru Limits. on\nDevelopment of Transport And Transit Management Center . Bidding stage/\nat Hebbal Transportation 250 42 BMTC DPR completed\nDevelopment of Traffic And Transit Management Center at . cae\nJayanagar 4th T Block Transportation 240 40 BMTC Bidding stage/\nDPR completed\nTraffic and Transit Management Centre at Yelahanka Transportation 375 63 BMTC Bidding stage/\nDPR completed\nDevelopment of Traffic And Transit Management Center at Transportation 155 26 BMTc Bidding stage/\nKathriguppe, Bengaluru DPR completed\noleh A Bidding stage/\nDevelopment of TTMC at Electronic City Transportation 83 14 BMTC  ppr completed\nDevelopment of TTMC at Chikkabettahalli (MS Palya), reaneportation NA NA BMTC Conceptualizati\n\nBengaluru\ng on\n\nDevelopment of Six lanes, 10.6 km North -South Corridor\nConnecting Central Silk Board To Hebbal. (I.E., Nh -7 Transportation NA NA\nTowards Hosur To Nh -7 Towards Bellary)\n\nKRDCL Conceptualizati\non\n\nDevelopment of Six lanes, 19.7 km East -West Corridor -1\n\nConnecting K.R.Puram To Gorguntepalya. (I.E., NH -4 Conceptualizati\n\n10 Towards Old Madras Road And NH - 4 Bengaluru - Pune Transportation NA NA KRDCL on\nRoad)\nTl Development of Six lanes, 27.7 km elevated corridor ranenortation NA NA KRDCL Conceptualizati\n\nconnecting Jnanabharathi to Varthur Kodi on\n\nDevelopment of four lanes, 9.2 km Connecting Corridor -1;\nConnecting North -South Corridor & East - West Corridor -2 Transportation NA NA KRDCL\nFrom Agra To Kalasipalya\n\nConceptualizati\non\n\niS)\n\nDevelopment of four lanes, 2.3 km Connecting Corridor -2;\nConnecting East -West Corridor -1 & East - West Corridor -2. Transportation NA NA KRDCL\nFrom Richmond Road To Ulsoor\n\nConceptualizati\non\n\naw\n\nDevelopment of for lane, 5.7 km Connecting Corridor -3;\nConnecting Corridor From Kalyan Nagar Junction at Outer\nRing Road to St. Johns Church Road and Wheelers Road\nJunction\n\nConceptualizati\non\n\nR\n\nTransportation NA NA KRDCL\n\nSe es Ez\n\nIK 2016 | BENGALURU URBAN ES",
+        "Infrastructure Readiness\n\nKempegowda International Airport, Bengaluru is a PPP with\nGol, GoK and Private Sector investment\n\n+ Aggressive traffic growth - over 15 million passengers per annum\n* 3rd largest airport in India\n\n \n\n« Awarded “Best Regional Airport In Central Asia”\n\nCity Gas Distribution Project\n\n1583 inch-km plan over 5 years to cover\nBengaluru Urban and Rural districts at INR\n749 Crore (USD 125 mn). (as per DPR)\n\n \n\n \n\nBengaluru International Convention Centre\n\n* 35 acres of land has been earmarked in the vicinity of Kempegowda International Airport\n* 6000 seater Convention Centre within Business Park\n\n* O&M of Convention Centre and Allied infra on PPP\n\n* KSIIDC appointed as nodal agency\n\n* Concept and architectural design in progress\n\n* Concept plan, Garden city theme, and Greenhouse concept has been finalised\n\nIK 2016 | BENGALURU URBAN 13 |",
+        "Investment Opportunities\n\nName of the Project\n\n \n\nDevelopment of International Aerospace Museum at\nJakkur in Bengaluru\n\nN\nfoe}\n\ni]\n©\n\nBengaluru International Convention Centre\n\nsen)\nfe}\n\nDevanahalli Business Park, Bengaluru\n\nNT\n\nDevelopment of Parking Management System in Bengaluru\n\nConstruction of Eight Lane Peripheral Ring Road (PRR) To\nBengaluru City\n\nen)\nN\n\nRedevelopment of Existing Market at Austin Town\n\nRedevelopment of BDA Shopping Complex at Domlur\n\nRedevelopment of BDA Complex at Indira Nagar\n\nRedevelopment of Existing Market at RT Nagar\n\nnT\n\naN) aN) wW in)\nN n uo 4 ce =\n\nRedevelopment of Mavalli Market, RV. Road, Bengaluru\n\nrN)\nfoo)\n\nConstruction of Market Complex at Akkipete, Bengaluru\n\nConstruction of 2000 Bus Shelters\n\nwW\n©\n\naS\nfe)\n\nEnergy Efficient Street Lights\n\nIK 2016 | BENGALURU URBAN\n\nSector\n\nTourism\n\nTourism\n\nUrban\nInfrastructure\n\nTransportation\n\nTransportation\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nUrban\nInfrastructure\n\nNA\n\n1,035\n\nNA\n\n55\n\n11,950\n\n123\n\n21\n\nBoo\n\n49\n\nNA\n\nNA\n\nNA\n\nNA\n\n173\n\nNA\n\n1,992\n\n20\n\n59\n\n0.5\n\nNA\n\nNA\n\nNA\n\nAgency\n\nKSIIDC\n\nKSIIDC\n\nKSIIDC\n\nDULT\n\nBDA\n\nBDA\n\nBDA\n\nBDA\n\nBDA\n\nBBMP\n\nBBMP\n\nBBMP.\n\nBBMP.\n\n  \n\nStatus\n\nConceptualization\n\nBidding Stage/\nDPR completed\n\nDPR under\npreparation\n\nBidding stage/\nDPR completed\n\nBidding stage/\nDPR completed\n\nDPR under\npreparation\n\nBidding stage/\nDPR completed\n\nBidding stage/\nDPR completed\n\nConceptualization\n\nDPR under\npreparation\n\nDPR under\npreparation\n\nConceptualization\n\nConceptualization",
+        "Connectivity\n\n   \n \n\nNH-4 (Mumbai - Pune - Bengaluru - Chennai),NH- 7(Varanasi - Nagpur - Hyderabad -\nBengaluru - Madurai) NH-209 (Bengaluru-Dindigul,Tamil Nadu) passes through the district\n\n* Total length of NHin the district’s 147km\n+ With 18 railway stations, total railway route of 148.32 km passes through the district\n+ Bengaluru is connected by rail to most cities in Karnataka, as well as other states\n\n« Kempegowda International Airport, Bengaluru is third busiest airport in India with about 1,05,000\naircraft movements, 9.92 million passengers and 1,75,000 tonnes cargo (2009). It has a capacity of\nhandling 3000 passengers per hour\n\n« The BIAL Phase ll expansion is already under progress\n« Bengaluru In Land container Depot\n\n« Bengaluru Metro (Namma Metro) - Mass Rapid Transit System for the city of Bengaluru. Total -137 km\n\n     \n     \n \n\n \n\nby 2017\nNearest Seaports Mumbai\nMangaluru 352 km.\nChennai 347 km. Hyderabad\nKarwar 522 km. “\nGoa 560 km.\n\nPort\nAirport\n352 Km\n\nFI Port BS Airport\n\nIK 2016 | BENGALURU URBAN B",
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure"
+      ],
+      "ideal_claims": [
+        "The Light Rail Transit System project in Bengaluru City is listed at INR 10,875 crore, and the associated agency is BMRCL."
+      ],
+      "retrieved_claims": [
+        "Name of the Project Sector Agency Sie 1a",
+        "(Crore) | (USD mn)",
+        "Light Rail Transit System in Bengaluru City Transportation 10,875 1,813, BARL",
+        "Development of Construction Multi Level Car Parking Conceptualizati",
+        "Transportation NA NA BBMP",
+        "[MLCP] Lots In Bengaluru Limits.",
+        "Development of Transport And Transit Management Center .",
+        "at Hebbal Transportation 250 42 BMTC DPR completed",
+        "Development of Traffic And Transit Management Center at .",
+        "Jayanagar 4th T Block Transportation 240 40 BMTC Bidding stage/",
+        "Traffic and Transit Management Centre at Yelahanka Transportation 375 63 BMTC Bidding stage/",
+        "Development of Traffic And Transit Management Center at Transportation 155 26 BMTc Bidding stage/"
+      ],
+      "ideal_claim_support": [
+        true
+      ],
+      "retrieved_claim_support": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.0833,
+      "contextual_recall": 1.0,
+      "contextual_relevancy": 0.0833,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dense-015",
+      "question": "What is the district's water infrastructure status regarding bore wells according to the available profile?",
+      "ideal_answer": "The profile does not provide enough specific information in the available tourism and district overview pages to answer this water-infrastructure question; a replacement bore-well project is mentioned only on the investment opportunities page.",
+      "category": "unsupported",
+      "difficulty": "hard",
+      "retrieved_chunk_ids": [
+        "page_2",
+        "page_9",
+        "page_7",
+        "page_15",
+        "page_5"
+      ],
+      "dense_distances": [
+        0.9098638892173767,
+        0.9347245693206787,
+        1.1993170976638794,
+        1.359859585762024,
+        1.3639096021652222
+      ],
+      "retrieved_context": [
+        "S N e D S h ot BENGALURU URBAN\n\nDistrict Profile\n\nDistrict Overview\nConnectivity\n\nCivic Infrastructure\nTourism\n\nPower and Water\nEconomic Profile\nAgricultural Profile\nIndustry Profile\nKey Industries\n\nAnnexure",
+        "Power and Water\n\nPower\n\n+ Transmission and Distribution in the district is\nbeing done by Bengaluru Electricity Supply\nCompany Limited (BESCOM)\n\n+ In wind power segment, projects have been\nproposed at Hanumanamatti and Kappatagudda\n\n+ Smart-grid is proposed to be implemented in the\nBengaluru Urban district by BESCOM\n\n+ Annual Average Consumption of 14225 MU\n+ 28 % Industrial, 33 % Domestic consumption\n\nWater\n\n+ Water supply for the district is managed by\nBangalore Water Supply and Sewerage Board\n(BWSSB)\n\n+ Water is sourced from Arakavathi river and\nCauvery for drinking purposes\n\n+ Bengaluru Urban has 461 water tanks of various\ncapacities serving irrigation needs\n\n+ 82 % of cultivable area is rain fed\n\n+ Total Supply Capacity - 1480 MLD\n\n+ 52 reservoirs and 118 ground level reservoirs\n+ Average Consumption\n\n+ Industrial - 522.37 MLD\n\n+ Domestic - 20.97 MLD\n\n=x\nAh\nJp\n\nJ\n\n \n\nSource: DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN Bi",
+        "Industry Profile\n\n \n\nSI. No. Industrial Area Extent (acres)\n1 Attibele 250\n2 Bommasandra | II & Ill Phases 904\n3 Bommasandra IV Phases 214\n4 Bommasandra - Jigani Link Road 712\n5) Doddennakkundi | & Il Phase Dyavasandra | & II Phases 526\n6 Electronic City Phase Il 341\n7 Electronic City Phase III 114\n8 EOIZ 18\n9 EPIP | & Il Phase 596\n10 Jigani | & Il Phase 615\n1 Kadugodi - Sadaramangala 539\n12 Kumbalagudu | & Il Phases 218\n13 Peenya lI, Il, Ill, IV Phases 1485\n14 Veerasandra 107\n15 Yarandahalli, Anekal Taluk 27\n16 Kachanayakanahalli, Anekal Taluk 35\n\nTOTAL 6701\n\n \n\n \n\n   \n\nSource: DIC - Bengaluru Urban e@ Industrial Area\n\nIK 2016 | BENGALURU URBAN",
+        "Infrastructure Readiness\n\n \n   \n\n0 : Operational Total Inv Exports Total\nNeeded Telefe) Taco SEZ units INRinCrore (2014-15) Employees\n\n     \n \n   \n \n\n1 | Bagmane SEZ peta IT &ITES 18 992.65 3524.68 18211\n2 | Biocon SEZ Desay Bos 12 1591.17 581.13 3953\nUrban technology\n3 Tochnouark Bengaluru | IT &ITES 5 720.61 | 2250.36 | 13913\n4 | Cessna SEZ eae IT &ITES 2 14775.41 | 3152.64 6980\n5 rormerly seeatin sez) Bengaluru | IT @ITES 18 228.94 | 4154.74 | 15486\n6 tid (clobal Ane tlooaty ef ee IT & ITES 15 222.33 | 3556.85 9911\n7 | HCL Technologies Ltd. pe fae IT & ITES 6 736.95 1824.52 7046\n8 aoe ‘arp hnology cee IT & ITES 10 196.31 4500.58 15972\n2 bucecs Paces arene IT &ITES 34 1299.33 7435.2 52059\nw|fecieeeseg | apg frames | ay | scene | vase | os\nRMZ Ecoworld Infrastructure\nUe Reece career ee iean | IT &ITES 26 1666.05 | 2882.29 7495\nProjects Pvt. Ltd.)\n12 | VIKAS TELECOM ef ae IT &ITES 36 1593.84 | 2215.48 8481\ni) crecuonte city) Pangan TP SITES 3 43114 3988.63 | 10094\n14 | Wipro United (Sarjapur) ce IT &ITES 4 480.58 4322.28 10920\nCee Aer etean | IT&ITES 1 444 24.12 651\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nIK 2016 | BENGALURU URBAN GG",
+        "Agricultural Profile\n\nThrust Areas\n* Expanding organic farming\n* Micro irrigation systems\n\n* Bio-fuel extraction plant and post\nharvest management facilities\n\n* Mechanization of farm activities\n\nMajor Crops\n\n+ Major crops grown - Paddy, Ragi, Maize, Horse\nGram and Oil Seeds.\n\n+ Anekal Taluk is called as ragi bowl of the State\n\n+ Horticultural crops - Banana, Grapes, Papaya,\nMango, Sapota, Pomegranate\n\n* Commercial plantation - Coconut, Rose\n\n+ The district has 649 milk co-operatives and\nproduces 119 mn litres of milk, 34.7 mn eggs,\n5880 tonnes of meat annually\n\nKey Enablers\n\n+ Bengaluru city provides unlimited access to\nmarket for fresh and processed horticultural\nproducts\n\n+ Presence of Floriculture auction center and\nInternational Airport provides enormous\nscope for floriculture industry. Bengaluru\nUrban is recognized as Class A destination for\nfloriculture projects\n\n+ Central and State Warehouses present in the\ndistrict supporting the agri market\n\n+ 30 Cold storages for vegetables, sea food, ice\ncream and for various other purposes\n\n+ Access to Bengaluru city market and other\ninternational organic markets offers great\nscope for organic farming in the district\n\n* Medium and bi-model rainfall pattern is\nsuitable for short/ long duration crops and for\nvaried cropping systems\n\n+ Excellent infrastructure for agriculture\nmarketing\n\n+ District agriculture training centre located at\nR.K Shala, Anekal Taluk\n\nSource: Karnataka at Glance, DIC-Bengaluru Urban\n\nIK 2016 | BENGALURU URBAN\n\nLand Utilisation (%)\n\n \n\nForests\n\n   \n  \n \n\n1.49%\nRemaining\narea 43.66%\n\nUncultivated\nLand 40.76%\n\nNet sown area\n(NSA) 14.09%\nTotal Land Area - 2,17,410 ha\n\nCropping Pattern (in %)\n\nOther Oil Seeds\n22.21% 1.43%\n\n-————> Commercial\ny crops 0.05%\n\n    \n\nPulses\n9.94%\n\nCereals\n\n66.36%"
+      ],
+      "ideal_claims": [
+        "The profile does not provide enough specific information in the available tourism and district overview pages to answer this water-infrastructure question; a replacement bore-well project is mentioned only on the investment opportunities page."
+      ],
+      "retrieved_claims": [
+        "S N e D S h ot BENGALURU URBAN",
+        "Power and Water",
+        "Power and Water",
+        "+ Transmission and Distribution in the district is",
+        "being done by Bengaluru Electricity Supply",
+        "Company Limited (BESCOM)",
+        "+ In wind power segment, projects have been",
+        "proposed at Hanumanamatti and Kappatagudda",
+        "+ Smart-grid is proposed to be implemented in the",
+        "Bengaluru Urban district by BESCOM",
+        "+ Annual Average Consumption of 14225 MU",
+        "+ 28 % Industrial, 33 % Domestic consumption"
+      ],
+      "ideal_claim_support": [
+        false
+      ],
+      "retrieved_claim_support": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_claim_relevance": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "deepeval": null,
+      "contextual_precision": 0.25,
+      "contextual_recall": 0.0,
+      "contextual_relevancy": 0.25,
+      "retrieval_precision_at_k": 0.0,
+      "retrieval_recall_at_k": 0.0,
+      "hit_rate": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  ]
+}
