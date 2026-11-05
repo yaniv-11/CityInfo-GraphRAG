@@ -1,0 +1,8 @@
+{
+  "top_k": 5,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "judge_model": "openai/gpt-4o-mini",
+  "context_precision_cutoff": 5,
+  "context_recall_cutoff": 5,
+  "threshold": 0.5
+}
