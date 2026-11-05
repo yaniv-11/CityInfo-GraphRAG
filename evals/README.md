@@ -41,6 +41,15 @@ The workflow runner retrieves context, generates an answer, and reports:
 - Context precision
 - End-to-end answer correctness
 
+## Safety evaluation
+
+```powershell
+python evals/evaluate_safety.py
+```
+
+The safety suite tests direct and indirect prompt injection, jailbreak attempts, instruction-hierarchy
+attacks, credential extraction, PII requests, executable instructions, and a benign control case.
+
 The default judge is Gemini. Set a Google API key before running it:
 
 ```powershell
