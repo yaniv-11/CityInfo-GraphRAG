@@ -5,16 +5,31 @@ import gc
 import json
 import os
 import shutil
+import sys
 import tempfile
 from html import escape
 from pathlib import Path
 
 import chromadb
 from dotenv import load_dotenv
+from langchain_core.documents import Document
 from openai import OpenAI
 from sentence_transformers import SentenceTransformer
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from hybrid_retrieval import (
+    RERANKER_MODEL,
+    RERANKER_THRESHOLD,
+    augment_with_triplets,
+    build_bm25_retriever,
+    load_reranker,
+    merge_documents,
+    rerank_documents,
+)
+
 DEFAULT_FIXTURE = ROOT / "evals" / "fixtures" / "city_rag_golden.json"
 DEFAULT_CONFIG = ROOT / "evals" / "config" / "metrics.json"
 DEFAULT_OUTPUT = ROOT / "evals" / "workflow_results.json"
@@ -23,7 +38,7 @@ load_dotenv(ROOT / ".env")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Evaluate the complete dense RAG workflow.")
+    parser = argparse.ArgumentParser(description="Evaluate the complete hybrid Graph-RAG workflow.")
     parser.add_argument("--fixture", type=Path, default=DEFAULT_FIXTURE)
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--chroma-path", type=Path, default=ROOT / "city_info_chroma")
@@ -155,6 +170,15 @@ def main() -> int:
         chroma_client = chromadb.PersistentClient(path=str(isolated_chroma))
         collection = chroma_client.get_collection(args.collection)
         embedder = SentenceTransformer(config.get("embedding_model", "all-MiniLM-L6-v2"))
+        reranker = load_reranker()
+        stored = collection.get(include=["documents"])
+        corpus = [
+            Document(page_content=text, metadata={"chunk_id": chunk_id})
+            for chunk_id, text in zip(stored["ids"], stored["documents"], strict=True)
+            if text is not None
+        ]
+        bm25_retriever = build_bm25_retriever(corpus, top_k)
+        triplets = json.loads((ROOT / "triplets.json").read_text(encoding="utf-8"))
 
         results = []
         for case in cases:
@@ -162,17 +186,32 @@ def main() -> int:
             hits = collection.query(
                 query_embeddings=[embedding],
                 n_results=min(top_k, collection.count()),
+                include=["documents", "distances"],
             )
-            context = hits["documents"][0]
-            answer = generate_answer(openrouter, workflow_model, case["question"], context)
+            dense_documents = [
+                Document(page_content=text, metadata={"chunk_id": chunk_id})
+                for chunk_id, text in zip(hits["ids"][0], hits["documents"][0], strict=True)
+                if text is not None
+            ]
+            candidates = merge_documents(dense_documents, bm25_retriever.invoke(case["question"]))
+            reranked = rerank_documents(case["question"], candidates, reranker)
+            retained_documents = [document for document, _ in reranked]
+            context = augment_with_triplets(retained_documents, triplets)
+            answer = (
+                generate_answer(openrouter, workflow_model, case["question"], context)
+                if context
+                else "No relevant info found."
+            )
             metrics = evaluate_workflow(case, answer, context, judge_model, config)
             results.append({
                 "id": case["id"],
                 "question": case["question"],
                 "ideal_answer": case["ideal_answer"],
                 "actual_output": answer,
-                "retrieved_chunk_ids": hits["ids"][0],
+                "candidate_chunk_ids": [document.metadata["chunk_id"] for document in candidates],
+                "retrieved_chunk_ids": [document.metadata["chunk_id"] for document in retained_documents],
                 "dense_distances": hits["distances"][0],
+                "reranker_scores": [score for _, score in reranked],
                 "retrieved_context": context,
                 "deepeval": metrics,
             })
@@ -201,6 +240,8 @@ def main() -> int:
             "workflow_model": workflow_model,
             "judge_model": judge_model,
             "top_k": top_k,
+            "reranker_model": RERANKER_MODEL,
+            "reranker_threshold": RERANKER_THRESHOLD,
         },
         "aggregate": aggregate,
         "cases": results,

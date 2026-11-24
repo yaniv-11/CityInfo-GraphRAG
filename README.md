@@ -21,8 +21,9 @@ rag graph-rag deepeval chromadb openrouter bengaluru civic-data llm-evaluation p
 - Extracts text, tables, images, and image captions from city documents.
 - Creates subject-relation-object knowledge graph triplets.
 - Stores document chunks in a persistent Chroma collection.
-- Supports dense retrieval and graph-augmented retrieval workflows.
-- Generates answers through configurable OpenRouter models.
+- Combines dense and BM25 retrieval, then reranks the merged candidates with a cross-encoder.
+- Sends only chunks with a sigmoid-normalized reranker score of at least `0.7` to the graph augmentation and answer stages.
+- Generates interactive chat answers through Gemini and uses OpenRouter models in evaluation workflows.
 - Uses DeepEval for retrieval, generator, workflow, and safety evaluation.
 - Records claims, retrieved chunks, metric scores, explanations, and pass/fail states in JSON reports.
 - Includes prompt-injection boundaries and adversarial safety fixtures.
@@ -31,6 +32,7 @@ rag graph-rag deepeval chromadb openrouter bengaluru civic-data llm-evaluation p
 
 ```text
 chat.py                         # Interactive chat application
+hybrid_retrieval.py             # Shared hybrid retrieval, reranking, and triplet augmentation
 ingest.py                       # PDF text and triplet ingestion
 ingest-caption.py               # Image caption and triplet ingestion
 pipeline-rag.py                 # Alternative Graph-RAG pipeline
@@ -44,6 +46,8 @@ evals/
   evaluate_safety.py
   config/metrics.json
   README.md
+tests/
+  test_hybrid_retrieval.py
 ```
 
 ## Setup
@@ -51,7 +55,7 @@ evals/
 Python 3.10 or newer is recommended.
 
 ```powershell
-python -m pip install chromadb python-dotenv deepeval openai sentence-transformers
+python -m pip install chromadb python-dotenv deepeval openai sentence-transformers langchain-community rank-bm25 google-genai
 Copy-Item .env.example .env
 ```
 
@@ -61,9 +65,10 @@ Configure `.env`:
 OPENROUTER_API_KEY=your_key_here
 OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 OPENROUTER_MODEL=openai/gpt-4o-mini
+GOOGLE_API_KEY=your_key_here
 ```
 
-Never commit `.env` or commit a real API key.
+`GOOGLE_API_KEY` is used by the interactive chat generator. Never commit `.env` or a real API key.
 
 ## Run
 
@@ -73,6 +78,15 @@ Start the interactive entry point:
 python main.py
 ```
 
+Chat retrieves up to five chunks from each of dense search and BM25, deduplicates
+the candidates, and scores each question/chunk pair with
+`cross-encoder/ms-marco-MiniLM-L-6-v2`. The cross-encoder emits logits; the
+application applies a sigmoid and retains scores `>= 0.7`. Matching knowledge
+graph triplets are added only after this filtering, and only the retained,
+triplet-augmented context is sent to Gemini. If no chunks meet the threshold,
+the application abstains without calling the generator. The cross-encoder and
+embedding models are downloaded on first use.
+
 Run the evaluation suites:
 
 ```powershell
@@ -81,6 +95,10 @@ python evals/evaluate_generator.py
 python evals/evaluate_workflow.py
 python evals/evaluate_safety.py
 ```
+
+Run focused reranking tests with `python -m pytest tests/test_hybrid_retrieval.py`.
+The workflow evaluation follows the same dense + BM25, cross-encoder threshold,
+and retained-chunk triplet augmentation path as chat.
 
 The lexical dense-retrieval judge can run without an API key:
 

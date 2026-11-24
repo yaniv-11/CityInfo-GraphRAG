@@ -1,50 +1,73 @@
 import json
+from pathlib import Path
 from html import escape
-from langchain_community.vectorstores import Chroma
-from langchain.retrievers import EnsembleRetriever, BM25Retriever
-from langchain_community.embeddings import HuggingFaceEmbeddings
+
+import chromadb
+from dotenv import load_dotenv
 from google import genai
+from langchain_core.documents import Document
+from sentence_transformers import SentenceTransformer
 
-# ======================
-# CONFIG
-# ======================
-CHROMA_DIR = "storage/chroma_db"
-TRIPLET_PATH = "storage/triplets.json"
-MODEL = "gemini-1.5-flash"
-
-# Initialize
-embedder = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-db = Chroma(persist_directory=CHROMA_DIR, embedding_function=embedder)
-triplets = json.load(open(TRIPLET_PATH, "r", encoding="utf-8"))
-
-# Build hybrid retriever
-docs = db.get()["documents"]
-bm25_retriever = BM25Retriever.from_texts(docs)
-vector_retriever = db.as_retriever(search_kwargs={"k": 3})
-
-hybrid_retriever = EnsembleRetriever(
-    retrievers=[bm25_retriever, vector_retriever],
-    weights=[0.5, 0.5]
+from hybrid_retrieval import (
+    RERANKER_THRESHOLD,
+    augment_with_triplets,
+    build_bm25_retriever,
+    load_reranker,
+    merge_documents,
+    rerank_documents,
 )
 
-# Gemini client
+ROOT = Path(__file__).resolve().parent
+CHROMA_DIR = ROOT / "city_info_chroma"
+COLLECTION_NAME = "city_info_embeddings"
+TRIPLET_PATH = ROOT / "triplets.json"
+MODEL = "gemini-1.5-flash"
+TOP_K = 5
+
+load_dotenv(ROOT / ".env")
+
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
+chroma_client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+collection = chroma_client.get_collection(COLLECTION_NAME)
+
+stored = collection.get(include=["documents", "metadatas"])
+stored_documents = [
+    Document(page_content=text, metadata={"chunk_id": chunk_id})
+    for chunk_id, text in zip(stored["ids"], stored["documents"], strict=True)
+    if text is not None
+]
+bm25_retriever = build_bm25_retriever(stored_documents, TOP_K)
+reranker = load_reranker()
+triplets = json.loads(TRIPLET_PATH.read_text(encoding="utf-8"))
 client = genai.Client()
 
-def augment_with_triplets(query, retrieved_docs, triplets):
-    text_context = "\n".join([doc.page_content for doc in retrieved_docs])
-    related = []
-    for t in triplets:
-        if any(e.lower() in text_context.lower() for e in [t["subject"], t["object"]]):
-            related.append(f"{t['subject']} {t['relation']} {t['object']}")
-    return text_context + "\n\nRelated Info:\n" + "\n".join(related[:10])
 
-def answer_query(query):
-    retrieved_docs = hybrid_retriever.get_relevant_documents(query)
-    if not retrieved_docs:
-        return "No relevant info found."
+def retrieve_and_rerank(query: str) -> list[tuple[Document, float]]:
+    count = collection.count()
+    if count == 0:
+        return []
 
-    augmented = augment_with_triplets(query, retrieved_docs, triplets)
+    embedding = embedder.encode(query, normalize_embeddings=True).tolist()
+    hits = collection.query(
+        query_embeddings=[embedding],
+        n_results=min(TOP_K, count),
+        include=["documents", "metadatas"],
+    )
+    dense_documents = [
+        Document(page_content=text, metadata={"chunk_id": chunk_id})
+        for chunk_id, text in zip(hits["ids"][0], hits["documents"][0], strict=True)
+        if text is not None
+    ]
+    candidates = merge_documents(dense_documents, bm25_retriever.invoke(query))
+    return rerank_documents(query, candidates, reranker)
 
+
+def answer_query(query: str) -> str:
+    retained = retrieve_and_rerank(query)
+    if not retained:
+        return f"No relevant info found (no chunks met the {RERANKER_THRESHOLD:.1f} relevance threshold)."
+
+    context = "\n\n".join(augment_with_triplets([document for document, _ in retained], triplets))
     response = client.models.generate_content(
         model=MODEL,
         config={"system_instruction": (
@@ -55,15 +78,17 @@ def answer_query(query):
         )},
         contents=(
             f"<user_question>\n{escape(query)}\n</user_question>\n\n"
-            f"<untrusted_retrieved_context>\n{escape(augmented)}\n</untrusted_retrieved_context>"
-        )
+            f"<untrusted_retrieved_context>\n{escape(context)}\n</untrusted_retrieved_context>"
+        ),
     )
-
+    if response.text is None:
+        raise RuntimeError("The generator returned no text.")
     return response.text
+
 
 if __name__ == "__main__":
     while True:
-        q = input("\n🧠 Ask something about city info: ")
-        if q.lower() in ["exit", "quit"]:
+        question = input("\n🧠 Ask something about city info: ")
+        if question.lower() in {"exit", "quit"}:
             break
-        print("\n🤖", answer_query(q))
+        print("\n🤖", answer_query(question))
