@@ -46,6 +46,7 @@ The suite should test:
 - dense retrieval precision and recall;
 - BM25 retrieval precision and recall;
 - hybrid retrieval precision and recall;
+- cross-encoder reranking quality and the number of chunks retained at the `0.7` threshold;
 - retrieval ranking quality;
 - graph triplet retrieval and relevance; and
 - the effect of duplicate, unrelated, or conflicting context.
@@ -75,8 +76,10 @@ question
   -> query normalization
   -> dense retrieval
   -> BM25 retrieval
-  -> hybrid fusion
-  -> knowledge graph augmentation
+  -> candidate deduplication
+  -> cross-encoder reranking
+  -> sigmoid score threshold (retain scores >= 0.7)
+  -> triplet comparison and augmentation for retained chunks
   -> final prompt
   -> generated answer
 ```
@@ -84,6 +87,12 @@ question
 Workflow tests should verify that retrieved context and final answers are
 consistent across repeated runs where the underlying data and model settings
 are pinned.
+
+The cross-encoder model and score threshold must be recorded with each workflow
+evaluation. Since the selected cross-encoder returns logits, convert each logit
+to a sigmoid score before applying the inclusive `0.7` threshold. Only retained
+chunks may be augmented with matching triplets or passed to the generator. If
+no chunk passes, the workflow should abstain without making a generation call.
 
 ### 2.5 Application-level tests
 

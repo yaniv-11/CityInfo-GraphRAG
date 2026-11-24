@@ -24,7 +24,8 @@ python evals/evaluate_generator.py
 ```
 
 The generator uses dense retrieval context and OpenRouter, then DeepEval measures answer relevancy,
-faithfulness, and answer correctness.
+faithfulness, and answer correctness. This isolates generation with dense-retrieval context; use the
+workflow evaluation below to test the full hybrid reranking and triplet-augmentation path.
 
 ## Workflow evaluation
 
@@ -32,7 +33,14 @@ faithfulness, and answer correctness.
 python evals/evaluate_workflow.py
 ```
 
-The workflow runner retrieves context, generates an answer, and reports:
+The workflow runner merges dense and BM25 candidates, reranks them with
+`cross-encoder/ms-marco-MiniLM-L-6-v2`, and retains chunks with sigmoid scores
+`>= 0.7`. It then adds triplets grounded in those retained chunks and generates
+an answer from that context. If no chunk passes the threshold, the workflow
+records an abstention instead of calling the generator. On first use, the
+sentence-transformers models are downloaded.
+
+The workflow reports:
 
 - Answer relevancy
 - Faithfulness
